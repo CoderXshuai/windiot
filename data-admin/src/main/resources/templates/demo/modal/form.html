@@ -17,11 +17,14 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label"><span style="color: red; ">*</span>归属部门：</label>
+                        <label class="col-sm-4 control-label">用户性别：</label>
                         <div class="col-sm-8">
-                            <div class="input-group">
-                            	<input name="deptName" type="text" placeholder="请选择归属部门" class="form-control">
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <div class="input-group" style="width: 100%">
+                                <select class="form-control m-b" name="sex"
+                                        th:with="type=${@dict.getType('sys_user_sex')}">
+                                    <option th:each="dict : ${type}" th:text="${dict.dictLabel}"
+                                            th:value="${dict.dictValue}"></option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -64,18 +67,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label class="col-sm-4 control-label">用户性别：</label>
-                        <div class="col-sm-8">
-                            <div class="input-group" style="width: 100%">
-                                <select name="sex" class="form-control m-b" th:with="type=${@dict.getType('sys_user_sex')}">
-				                    <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
-				                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label class="col-sm-4 control-label">用户状态：</label>

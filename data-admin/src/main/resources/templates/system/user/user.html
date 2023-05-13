@@ -25,17 +25,17 @@
 <!--		</div>-->
 <!--	</div>-->
 
-<div class="ui-layout-center">
-		<div class="container-div">
-			<div class="row">
-				<div class="col-sm-12 search-collapse">
-					<form id="user-form">
-						<input type="hidden" id="deptId" name="deptId">
-		                <input type="hidden" id="parentId" name="parentId">
-						<div class="select-list">
-							<ul>
-								<li>
-									登录名称：<input type="text" name="loginName"/>
+	<div class="ui-layout-center">
+        <div class="container-div">
+            <div class="row">
+                <div class="col-sm-12 search-collapse">
+                    <form id="user-form">
+                        <input type="hidden" id="deptId" name="deptId">
+                        <input type="hidden" id="parentId" name="parentId">
+                        <div class="select-list">
+                            <ul>
+                                <li>
+                                    登录名称：<input type="text" name="loginName"/>
 								</li>
 								<li>
 									手机号码：<input type="text" name="phonenumber"/>
@@ -118,12 +118,12 @@
 		        sortOrder: "desc",
 		        modalName: "用户",
 		        columns: [{
-		            checkbox: true
-		        },
-		        {
-		            field: 'userId',
-		            title: '用户ID'
+                    checkbox: true
                 },
+                    {
+                        field: 'userId',
+                        title: '用户ID'
+                    },
                     {
                         field: 'loginName',
                         title: '登录名称',
@@ -147,16 +147,16 @@
                         title: '手机'
                     },
                     {
-		        	visible: editFlag == 'hidden' ? false : true,
-		        	title: '用户状态',
-		        	align: 'center',
-		        	formatter: function (value, row, index) {
-		        		return statusTools(row);
-		        	}
-		        },
-		        {
-		            field: 'createTime',
-		            title: '创建时间',
+                        visible: editFlag == 'hidden' ? false : true,
+                        title: '用户状态',
+                        align: 'center',
+                        formatter: function (value, row, index) {
+                            return statusTools(row);
+                        }
+                    },
+                    {
+                        field: 'createTime',
+                        title: '创建时间',
 		            sortable: true
 		        },
 		        {

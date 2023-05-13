@@ -20,12 +20,11 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label"><span style="color: red; ">*</span>归属部门：</label>
+                        <label class="col-sm-4 control-label"><span style="color: red; ">*</span>用户性别：</label>
                         <div class="col-sm-8">
-                            <div class="input-group">
-                            	<input name="deptName" onclick="selectDeptTree()" id="treeName" type="text" placeholder="请选择归属部门" class="form-control" required>
-                                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                            </div>
+                            <select name="sex" class="form-control m-b" th:with="type=${@dict.getType('sys_user_sex')}">
+                                <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -69,11 +68,11 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <label class="col-sm-4 control-label">用户性别：</label>
-                        <div class="col-sm-8">
-                            <select name="sex" class="form-control m-b" th:with="type=${@dict.getType('sys_user_sex')}">
-				                <option th:each="dict : ${type}" th:text="${dict.dictLabel}" th:value="${dict.dictValue}"></option>
-				            </select>
+                        <label class="col-xs-4 control-label">角色：</label>
+                        <div class="col-xs-8">
+                            <label th:each="role:${roles}" class="check-box">
+                                <input name="role" type="checkbox" th:value="${role.roleId}" th:text="${role.roleName}" th:disabled="${role.status == '1'}">
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -85,30 +84,6 @@
 	                            <input type="checkbox" id="status" checked>
 	                            <span></span>
 	                        </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-xs-2 control-label">岗位：</label>
-                        <div class="col-xs-4">
-                            <select id="post" class="form-control select2-multiple" multiple>
-								<option th:each="post:${posts}" th:value="${post.postId}" th:text="${post.postName}" th:disabled="${post.status == '1'}"></option>
-							</select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-            	<div class="col-sm-12">
-                    <div class="form-group">
-                        <label class="col-xs-2 control-label">角色：</label>
-                        <div class="col-xs-10">
-                            <label th:each="role:${roles}" class="check-box">
-								<input name="role" type="checkbox" th:value="${role.roleId}" th:text="${role.roleName}" th:disabled="${role.status == '1'}">
-							</label>
                         </div>
                     </div>
                 </div>
