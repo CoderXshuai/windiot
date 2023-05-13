@@ -1,21 +1,19 @@
 package com.data.web.controller.windpower;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import com.data.biz.service.IBizFunctionalTestService;
 import com.data.common.biz.domain.DBParam;
 import com.data.common.biz.domain.DBResult;
 import com.data.common.core.controller.BaseController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 @Controller
 @RequestMapping("/windpower/functionaltest")
 public class FunctionalTestController extends BaseController {
@@ -38,7 +36,8 @@ public class FunctionalTestController extends BaseController {
 //		BizFanMatrix bizFanMatrix = new BizFanMatrix();
 //		bizFanMatrix.setPlantId(new Long(1));
 		String[] names = functionalTestService.getAllTags();
-		mmap.put("names", names);
+        mmap.put("names", names);
+        logger.debug("functionalTestServicenames" + Arrays.toString(names));
 		return prefix + "/functionaltest";
 	}
 	
