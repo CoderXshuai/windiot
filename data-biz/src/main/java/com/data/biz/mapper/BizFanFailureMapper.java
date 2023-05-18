@@ -1,10 +1,10 @@
 package com.data.biz.mapper;
 
-import java.util.List;
-
+import com.data.biz.domain.BizFanFailure;
+import com.data.biz.vo.FanAlertManageVo;
 import org.apache.ibatis.annotations.Param;
 
-import com.data.biz.domain.BizFanFailure;
+import java.util.List;
 
 /**
  * 故障Mapper接口
@@ -36,7 +36,7 @@ public interface BizFanFailureMapper
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
-	public int insertBizFanFailure(BizFanFailure bizFanFailure);
+	public int insertBizFanFailure(FanAlertManageVo fanAlertManageVo);
 
 	/**
 	 * 修改故障
@@ -44,7 +44,7 @@ public interface BizFanFailureMapper
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
-	public int updateBizFanFailure(BizFanFailure bizFanFailure);
+	public int updateBizFanFailure(FanAlertManageVo fanAlertManageVo);
 
 	/**
 	 * 删除故障

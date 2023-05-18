@@ -243,7 +243,7 @@
                                                                 name='params[treeParentCode]' style="width: 100%">
                                                             <option value="">---请选择---</option>
                                                             <option th:each="column : ${table.columns}"
-                                                                    th:text="${column.columnName + '锛�' + column.columnComment}"
+                                                                    th:text="${column.columnName + '：' + column.columnComment}"
                                                                     th:value="${column.columnName}"
                                                                     th:field="*{treeParentCode}"></option>
                                                         </select>
@@ -263,7 +263,7 @@
                                                                 name='params[treeName]' style="width: 100%">
                                                             <option value="">----请选择---</option>
                                                             <option th:each="column : ${table.columns}"
-                                                                    th:text="${column.columnName + '锛�' + column.columnComment}"
+                                                                    th:text="${column.columnName + '：' + column.columnComment}"
                                                                     th:value="${column.columnName}"
                                                                     th:field="*{treeName}"></option>
                                                         </select>
@@ -559,7 +559,7 @@
 
 </script>
 
-<!-- 鏌ヨ鏂瑰紡 -->
+<!-- 查询方式 -->
 <script id="queryTypeTpl" type="text/x-jquery-tmpl">
 <div>
 <select class='form-control' name='columns[${index}].queryType'>

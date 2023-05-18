@@ -894,6 +894,7 @@
             editUrl: function(id) {
             	var url = "/404.html";
             	if ($.common.isNotEmpty(id)) {
+                    console.log("$.table._option.updateUrl"+$.table._option.updateUrl)
             	    url = $.table._option.updateUrl.replace("{id}", id);
             	} else {
             	    var id = $.common.isEmpty($.table._option.uniqueId) ? $.table.selectFirstColumns() : $.table.selectColumns($.table._option.uniqueId);

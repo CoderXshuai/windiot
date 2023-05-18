@@ -1,121 +1,143 @@
 package com.data.biz.domain;
 
-import java.util.Date;
-
 import com.data.common.annotation.Excel;
 import com.data.common.core.domain.BaseEntity;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
+import java.util.Date;
 
 /**
- * 
- * @author xzp
- * @date 2019-12-09
+ * 故障对象 biz_fan_failure
+ *
+ * @author ruoyi
+ * @date 2023-05-18
  */
-public class BizFanFailure extends BaseEntity
-{
-	private static final long serialVersionUID = 1L;
+public class BizFanFailure extends BaseEntity {
+    private static final long serialVersionUID = 1L;
 
-	/** 序号 */
-	private Long id;
+    /**
+     * 序号
+     */
+    @Excel(name = "序号")
+    private Long id;
 
-	/** 风机序号 */
-	@Excel(name = "风机序号")
-	private Long fanId;
+    /**
+     * 风机序号
+     */
+    @Excel(name = "风机序号")
+    private Long fanId;
 
-	/** 1.叶片故障
-        2.转向故障
-        3.发电机故障
-        4.其他故障
-        2.转向故障
-        3.发电机故障
-        4.其他故障")*/
+    /**
+     * 故障类型
+     */
     @Excel(name = "故障类型")
-	private Integer type;
+    private Integer type;
 
-	/** 负责人 */
-    @Excel(name = "负责人")
-	private String principal;
+    /**
+     * 负责人
+     */
+    private String principal;
 
-	/** 1未处理2处理中3已处理 */
-    @Excel(name = "处理情况")
-	private Integer status;
+    /**
+     * 处理状态
+     */
+    private Integer status;
 
-	/** 处理时间 */
-    @Excel(name = "处理时间", width = 30, dateFormat = "yyyy-MM-dd")
-	private Date processingTime;
+    /**
+     * 处理时间
+     */
+    private Date processingTime;
 
-	/** 处理描述 */
-    @Excel(name = "处理描述")
-	private String remark;
-	
-	
-	public void setId(Long id) 
-	{
-		this.id = id;
-	}
+    /**
+     * 事故等级
+     */
+    @Excel(name = "事故等级")
+    private Integer level;
 
-	public Long getId() 
-	{
-		return id;
-	}
-	public void setFanId(Long fanId) 
-	{
-		this.fanId = fanId;
-	}
+    /**
+     * 记录人
+     */
+    @Excel(name = "记录人")
+    private String record;
 
-	public Long getFanId() 
-	{
-		return fanId;
-	}
-	public void setType(Integer type) 
-	{
-		this.type = type;
-	}
+    public Long getId() {
+        return id;
+    }
 
-	public Integer getType() 
-	{
-		return type;
-	}
-	public void setPrincipal(String principal) 
-	{
-		this.principal = principal;
-	}
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-	public String getPrincipal() 
-	{
-		return principal;
-	}
-	public void setStatus(Integer status) 
-	{
-		this.status = status;
-	}
+    public Long getFanId() {
+        return fanId;
+    }
 
-	public Integer getStatus() 
-	{
-		return status;
-	}
-	public void setProcessingTime(Date processingTime) 
-	{
-		this.processingTime = processingTime;
-	}
+    public void setFanId(Long fanId) {
+        this.fanId = fanId;
+    }
 
-	public Date getProcessingTime() 
-	{
-		return processingTime;
-	}
+    public Integer getType() {
+        return type;
+    }
 
+    public void setType(Integer type) {
+        this.type = type;
+    }
 
+    public String getPrincipal() {
+        return principal;
+    }
 
-	public String getRemark() {
-		return remark;
-	}
+    public void setPrincipal(String principal) {
+        this.principal = principal;
+    }
 
-	public void setRemark(String remark) {
-		this.remark = remark;
-	}
+    public Integer getStatus() {
+        return status;
+    }
 
-	@Override
-	public String toString() {
-		return "BizFanFailure [id=" + id + ", fanId=" + fanId + ", type=" + type + ", principal=" + principal
-				+ ", status=" + status + ", processingTime=" + processingTime + ", remark=" + remark + "]";
-	}
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Date getProcessingTime() {
+        return processingTime;
+    }
+
+    public void setProcessingTime(Date processingTime) {
+        this.processingTime = processingTime;
+    }
+
+    public Integer getLevel() {
+        return level;
+    }
+
+    public void setLevel(Integer level) {
+        this.level = level;
+    }
+
+    public String getRecord() {
+        return record;
+    }
+
+    public void setRecord(String record) {
+        this.record = record;
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.MULTI_LINE_STYLE)
+                .append("id", getId())
+                .append("fanId", getFanId())
+                .append("type", getType())
+                .append("principal", getPrincipal())
+                .append("status", getStatus())
+                .append("processingTime", getProcessingTime())
+                .append("createTime", getCreateTime())
+                .append("remark", getRemark())
+                .append("level", getLevel())
+                .append("record", getRecord())
+                .toString();
+    }
 }

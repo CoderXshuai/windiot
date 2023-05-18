@@ -1,11 +1,11 @@
 package com.data.biz.service;
 
-import java.util.List;
-
 import com.data.biz.domain.BizFanFailure;
 import com.data.biz.vo.FanAlertManageVo;
 import com.data.biz.vo.WindAlertSelectVo;
 import com.data.common.core.domain.AjaxResult;
+
+import java.util.List;
 
 /**
  * 故障Service接口
@@ -37,7 +37,7 @@ public interface IBizFanFailureService
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
-	public int insertBizFanFailure(BizFanFailure bizFanFailure);
+	public int insertBizFanFailure(FanAlertManageVo fanAlertManageVo);
 
 	/**
 	 * 修改故障
@@ -45,7 +45,7 @@ public interface IBizFanFailureService
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
-	public int updateBizFanFailure(BizFanFailure bizFanFailure);
+	public int updateBizFanFailure(FanAlertManageVo fanAlertManageVo);
 
 	/**
 	 * 批量删除故障
