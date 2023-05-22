@@ -3,7 +3,7 @@ package com.data.common.core.domain;
 /**
  * Tree基类
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class TreeEntity extends BaseEntity
 {

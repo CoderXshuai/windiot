@@ -12,7 +12,7 @@ import com.data.quartz.service.ISysJobLogService;
 /**
  * 定时任务调度日志信息 服务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysJobLogServiceImpl implements ISysJobLogService

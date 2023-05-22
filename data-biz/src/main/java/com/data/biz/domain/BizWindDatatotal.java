@@ -8,7 +8,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 风速统计对象 biz_wind_datatotal
  * 
- * 技术支持微信：17725354261
+ * 
  * @date 2019-12-09
  */
 public class BizWindDatatotal extends BaseEntity

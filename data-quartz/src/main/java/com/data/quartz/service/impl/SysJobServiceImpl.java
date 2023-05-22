@@ -22,7 +22,7 @@ import com.data.quartz.util.ScheduleUtils;
 /**
  * 定时任务调度信息 服务层
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Service
 public class SysJobServiceImpl implements ISysJobService

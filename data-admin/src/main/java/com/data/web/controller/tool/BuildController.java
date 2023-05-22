@@ -10,7 +10,7 @@ import com.data.common.core.controller.BaseController;
 /**
  * build 表单构建
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/tool/build")

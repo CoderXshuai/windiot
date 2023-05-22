@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 /**
  * 启动程序
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 public class RuoYiApplication
@@ -16,7 +16,7 @@ public class RuoYiApplication
     {
         // System.setProperty("spring.devtools.restart.enabled", "false");
         SpringApplication.run(RuoYiApplication.class, args);
-        System.out.println(" 视云风电监测系统 技术支持微信：17725354261ﾞ  \n" +
+        System.out.println(" 风电事故管理系统 ﾞ  \n" +
 
                 " ''-'   `'-'    `-..-'              ");
     }

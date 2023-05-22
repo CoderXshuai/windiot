@@ -11,7 +11,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 业务表 gen_table
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class GenTable extends BaseEntity
 {

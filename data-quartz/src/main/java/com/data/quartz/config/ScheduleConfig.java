@@ -9,7 +9,7 @@ import java.util.Properties;
 /**
  * 定时任务配置
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Configuration
 public class ScheduleConfig

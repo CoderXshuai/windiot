@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 系统访问记录表 sys_logininfor
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysLogininfor extends BaseEntity
 {

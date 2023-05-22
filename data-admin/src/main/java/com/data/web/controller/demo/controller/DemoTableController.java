@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 /**
  * 表格相关
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/demo/table")

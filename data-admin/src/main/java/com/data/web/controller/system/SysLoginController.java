@@ -19,7 +19,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 登录验证
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 public class SysLoginController extends BaseController

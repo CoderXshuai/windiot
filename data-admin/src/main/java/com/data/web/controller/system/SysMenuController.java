@@ -26,7 +26,7 @@ import com.data.system.service.ISysMenuService;
 /**
  * 菜单信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/system/menu")

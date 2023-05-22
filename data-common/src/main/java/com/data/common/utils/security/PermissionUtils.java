@@ -15,7 +15,7 @@ import com.data.common.utils.MessageUtils;
 /**
  * permission 工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class PermissionUtils
 {

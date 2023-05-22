@@ -11,7 +11,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 参数配置表 sys_config
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysConfig extends BaseEntity
 {

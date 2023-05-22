@@ -28,7 +28,7 @@ import com.github.pagehelper.PageInfo;
 /**
  * web层通用数据处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class BaseController
 {

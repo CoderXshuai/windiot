@@ -3,7 +3,7 @@ package com.data.common.utils.file;
 /**
  * 媒体类型工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class MimeTypeUtils
 {

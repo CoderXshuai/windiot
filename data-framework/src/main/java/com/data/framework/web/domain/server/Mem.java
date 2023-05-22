@@ -5,7 +5,7 @@ import com.data.common.utils.Arith;
 /**
  * 內存相关信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Mem
 {

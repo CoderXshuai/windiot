@@ -14,7 +14,7 @@ import com.data.system.service.ISysConfigService;
 /**
  * 参数配置 服务层实现
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysConfigServiceImpl implements ISysConfigService

@@ -12,7 +12,7 @@ import com.data.framework.shiro.session.OnlineSessionDAO;
 /**
  * 同步Session数据到Db
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SyncOnlineSessionFilter extends PathMatchingFilter
 {

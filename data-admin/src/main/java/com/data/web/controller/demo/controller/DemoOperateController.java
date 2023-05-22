@@ -27,7 +27,7 @@ import com.data.web.controller.demo.domain.UserOperateModel;
 /**
  * 操作控制
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/demo/operate")

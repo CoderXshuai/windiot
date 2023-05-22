@@ -11,7 +11,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 角色表 sys_role
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysRole extends BaseEntity
 {

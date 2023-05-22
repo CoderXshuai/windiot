@@ -3,7 +3,7 @@ package com.data.framework.web.domain.server;
 /**
  * 系统相关信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Sys
 {

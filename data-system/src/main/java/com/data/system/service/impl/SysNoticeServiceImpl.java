@@ -12,7 +12,7 @@ import com.data.system.service.ISysNoticeService;
 /**
  * 公告 服务层实现
  * 
- * 技术支持微信：17725354261
+ *
  * @date 2018-06-25
  */
 @Service

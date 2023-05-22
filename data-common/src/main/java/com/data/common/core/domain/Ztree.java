@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Ztree树结构实体类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Ztree implements Serializable
 {

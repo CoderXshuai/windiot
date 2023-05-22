@@ -16,7 +16,7 @@ import com.data.system.service.ISysMenuService;
 /**
  * 首页 业务处理
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 public class SysIndexController extends BaseController

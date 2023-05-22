@@ -7,7 +7,7 @@ import com.data.system.domain.SysPost;
 /**
  * 岗位信息 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysPostMapper
 {

@@ -7,7 +7,7 @@ import com.data.system.domain.SysUserPost;
 /**
  * 用户与岗位关联表 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysUserPostMapper
 {

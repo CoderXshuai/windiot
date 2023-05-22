@@ -17,7 +17,7 @@ import com.data.common.utils.Threads;
 /**
  * 自定义任务调度器完成
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component
 public class SpringSessionValidationScheduler implements SessionValidationScheduler

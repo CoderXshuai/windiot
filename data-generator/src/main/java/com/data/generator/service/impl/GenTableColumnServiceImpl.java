@@ -12,7 +12,7 @@ import com.data.generator.service.IGenTableColumnService;
 /**
  * 业务字段 服务层实现
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class GenTableColumnServiceImpl implements IGenTableColumnService

@@ -11,7 +11,7 @@ import com.data.common.utils.http.HttpUtils;
 /**
  * 获取地址类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class AddressUtils
 {

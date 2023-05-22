@@ -8,15 +8,15 @@ import java.util.List;
 
 /**
  * 故障Mapper接口
- * 
- * 技术支持微信：17725354261
+ *
+ *
  * @date 2019-12-09
  */
-public interface BizFanFailureMapper 
+public interface BizFanFailureMapper
 {
 	/**
 	 * 查询故障
-	 * 
+	 *
 	 * @param id 故障ID
 	 * @return 故障
 	 */
@@ -24,7 +24,7 @@ public interface BizFanFailureMapper
 
 	/**
 	 * 查询故障列表
-	 * 
+	 *
 	 * @param bizFanFailure 故障
 	 * @return 故障集合
 	 */
@@ -32,7 +32,7 @@ public interface BizFanFailureMapper
 
 	/**
 	 * 新增故障
-	 * 
+	 *
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
@@ -40,7 +40,7 @@ public interface BizFanFailureMapper
 
 	/**
 	 * 修改故障
-	 * 
+	 *
 	 * @param bizFanFailure 故障
 	 * @return 结果
 	 */
@@ -48,7 +48,7 @@ public interface BizFanFailureMapper
 
 	/**
 	 * 删除故障
-	 * 
+	 *
 	 * @param id 故障ID
 	 * @return 结果
 	 */
@@ -56,7 +56,7 @@ public interface BizFanFailureMapper
 
 	/**
 	 * 批量删除故障
-	 * 
+	 *
 	 * @param ids 需要删除的数据ID
 	 * @return 结果
 	 */
@@ -101,5 +101,6 @@ public interface BizFanFailureMapper
 	 * @return
 	 */
 	public int updateStatus(@Param("failureId")long failureId,@Param("remark")String remark);
+
 
 }

@@ -11,7 +11,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 菜单权限表 sys_menu
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysMenu extends BaseEntity
 {

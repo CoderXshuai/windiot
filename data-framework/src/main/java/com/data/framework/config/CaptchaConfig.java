@@ -10,7 +10,7 @@ import static com.google.code.kaptcha.Constants.*;
 /**
  * 验证码配置
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Configuration
 public class CaptchaConfig

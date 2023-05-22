@@ -3,7 +3,7 @@ package com.data.common.constant;
 /**
  * 代码生成通用常量
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class GenConstants
 {

@@ -9,7 +9,7 @@ import com.data.system.domain.SysUserRole;
 /**
  * 角色业务层
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public interface ISysRoleService
 {

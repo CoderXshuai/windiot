@@ -8,7 +8,7 @@ import com.data.common.utils.spring.SpringUtils;
 /**
  * 获取i18n资源文件
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class MessageUtils
 {

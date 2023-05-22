@@ -15,7 +15,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 用户对象 sys_user
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysUser extends BaseEntity
 {

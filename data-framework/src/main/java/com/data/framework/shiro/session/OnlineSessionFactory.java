@@ -15,7 +15,7 @@ import eu.bitwalker.useragentutils.UserAgent;
 /**
  * 自定义sessionFactory会话
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component
 public class OnlineSessionFactory implements SessionFactory

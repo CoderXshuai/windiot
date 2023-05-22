@@ -23,7 +23,7 @@ import com.data.system.domain.SysUser;
 /**
  * 退出过滤器
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class LogoutFilter extends org.apache.shiro.web.filter.authc.LogoutFilter
 {

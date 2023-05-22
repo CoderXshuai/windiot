@@ -115,8 +115,7 @@ public class FanAlertManageController extends BaseController {
     }
 
     @GetMapping("/add")
-    public String add()
-    {
+    public String add() {
         return prefix + "/add";
     }
 
@@ -125,9 +124,7 @@ public class FanAlertManageController extends BaseController {
      */
     @PostMapping("/add")
     @ResponseBody
-    public AjaxResult addSave(FanAlertManageVo FanAlertManageVo)
-    {
-        insertTag(bizFan.getFanCode());
-        return toAjax(bizFanService.insertBizFan(bizFan));
+    public AjaxResult addSave(FanAlertManageVo FanAlertManageVo) {
+        return toAjax(iBizFanFailureService.insertBizFanFailure(FanAlertManageVo));
     }
 }

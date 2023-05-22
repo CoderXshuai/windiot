@@ -21,7 +21,7 @@ import com.data.system.service.ISysLogininforService;
 /**
  * 系统访问记录
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/monitor/logininfor")

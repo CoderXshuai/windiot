@@ -31,7 +31,7 @@ import com.data.system.service.ISysUserService;
 /**
  * 用户信息
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/system/user")

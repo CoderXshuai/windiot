@@ -7,7 +7,7 @@ import com.data.system.domain.SysConfig;
 /**
  * 参数配置 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysConfigMapper
 {

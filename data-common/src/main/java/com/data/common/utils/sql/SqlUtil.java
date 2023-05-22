@@ -5,7 +5,7 @@ import com.data.common.utils.StringUtils;
 /**
  * sql操作工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SqlUtil
 {

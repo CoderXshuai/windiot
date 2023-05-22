@@ -12,7 +12,7 @@ import com.data.common.utils.YamlUtil;
 /**
  * 全局配置类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Global
 {

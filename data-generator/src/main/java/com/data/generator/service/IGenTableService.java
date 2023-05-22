@@ -8,7 +8,7 @@ import com.data.generator.domain.GenTable;
 /**
  * 业务 服务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface IGenTableService
 {

@@ -7,7 +7,7 @@ import com.data.quartz.domain.SysJobLog;
 /**
  * 调度任务日志信息 数据层
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public interface SysJobLogMapper
 {

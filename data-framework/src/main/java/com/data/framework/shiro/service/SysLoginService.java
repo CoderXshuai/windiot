@@ -25,7 +25,7 @@ import com.data.system.service.ISysUserService;
 /**
  * 登录校验方法
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component
 public class SysLoginService

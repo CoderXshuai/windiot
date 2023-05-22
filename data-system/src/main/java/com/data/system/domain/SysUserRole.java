@@ -6,7 +6,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 /**
  * 用户和角色关联 sys_user_role
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysUserRole
 {

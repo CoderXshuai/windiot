@@ -19,7 +19,7 @@ import com.data.common.utils.security.PermissionUtils;
 /**
  * 全局异常处理器
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler

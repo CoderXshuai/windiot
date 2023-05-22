@@ -14,7 +14,7 @@ import com.data.common.xss.XssFilter;
 /**
  * Filter配置
  *
- * 技术支持微信：17725354261
+ * 
  */
 @Configuration
 public class FilterConfig

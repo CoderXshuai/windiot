@@ -19,7 +19,7 @@ import com.data.system.service.ISysDictTypeService;
 /**
  * 字典 业务层处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysDictTypeServiceImpl implements ISysDictTypeService

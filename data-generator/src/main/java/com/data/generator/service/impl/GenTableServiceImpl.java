@@ -36,7 +36,7 @@ import com.data.generator.util.VelocityUtils;
 /**
  * 业务 服务层实现
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class GenTableServiceImpl implements IGenTableService

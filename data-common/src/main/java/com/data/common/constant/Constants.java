@@ -3,7 +3,7 @@ package com.data.common.constant;
 /**
  * 通用常量信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Constants
 {

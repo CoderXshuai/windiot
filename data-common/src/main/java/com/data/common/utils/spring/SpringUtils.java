@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * spring工具类 方便在非spring管理环境中获取bean
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component
 public final class SpringUtils implements BeanFactoryPostProcessor

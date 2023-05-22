@@ -13,7 +13,7 @@ import com.data.system.service.ISysUserOnlineService;
 /**
  * 会话db操作处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component
 public class SysShiroService

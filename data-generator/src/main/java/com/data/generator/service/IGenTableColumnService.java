@@ -7,7 +7,7 @@ import com.data.generator.domain.GenTableColumn;
 /**
  * 业务字段 服务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface IGenTableColumnService
 {

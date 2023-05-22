@@ -5,7 +5,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 分页数据
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class PageDomain
 {

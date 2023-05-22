@@ -12,7 +12,7 @@ import com.data.common.enums.OperatorType;
 /**
  * 自定义操作日志记录注解
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Target({ ElementType.PARAMETER, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)

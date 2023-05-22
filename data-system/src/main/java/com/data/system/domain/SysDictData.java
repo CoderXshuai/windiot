@@ -12,7 +12,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 字典数据表 sys_dict_data
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysDictData extends BaseEntity
 {

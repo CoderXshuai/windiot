@@ -3,7 +3,7 @@ package com.data.common.exception.job;
 /**
  * 计划策略异常
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class TaskException extends Exception
 {

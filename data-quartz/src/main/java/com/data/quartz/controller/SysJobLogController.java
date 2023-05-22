@@ -23,7 +23,7 @@ import com.data.quartz.service.ISysJobLogService;
 /**
  * 调度日志操作处理
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/monitor/jobLog")

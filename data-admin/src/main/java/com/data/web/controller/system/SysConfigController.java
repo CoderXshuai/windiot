@@ -26,7 +26,7 @@ import com.data.system.service.ISysConfigService;
 /**
  * 参数配置 信息操作处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/system/config")

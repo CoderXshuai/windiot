@@ -25,7 +25,7 @@ import io.swagger.annotations.ApiOperation;
 /**
  * swagger 用户测试方法
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Api("用户信息管理")
 @RestController

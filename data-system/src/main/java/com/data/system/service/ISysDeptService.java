@@ -9,7 +9,7 @@ import com.data.system.domain.SysRole;
 /**
  * 部门管理 服务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface ISysDeptService
 {

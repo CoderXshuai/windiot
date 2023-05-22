@@ -19,7 +19,7 @@ import com.data.system.service.ISysDeptService;
 /**
  * 部门管理 服务实现
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysDeptServiceImpl implements ISysDeptService

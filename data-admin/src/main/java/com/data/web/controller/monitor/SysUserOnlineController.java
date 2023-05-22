@@ -25,7 +25,7 @@ import com.data.system.service.ISysUserOnlineService;
 /**
  * 在线用户监控
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/monitor/online")

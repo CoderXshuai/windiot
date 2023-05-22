@@ -12,7 +12,7 @@ import com.data.system.service.ISysOperLogService;
 /**
  * 操作日志 服务层处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysOperLogServiceImpl implements ISysOperLogService

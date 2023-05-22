@@ -11,7 +11,7 @@ import com.data.generator.domain.GenTableColumn;
 /**
  * 代码生成器 工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class GenUtils
 {

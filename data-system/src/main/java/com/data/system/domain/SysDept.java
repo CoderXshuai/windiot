@@ -9,7 +9,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 部门表 sys_dept
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysDept extends BaseEntity
 {

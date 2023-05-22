@@ -15,7 +15,7 @@ import com.data.framework.interceptor.RepeatSubmitInterceptor;
 /**
  * 通用配置
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Configuration
 public class ResourcesConfig implements WebMvcConfigurer

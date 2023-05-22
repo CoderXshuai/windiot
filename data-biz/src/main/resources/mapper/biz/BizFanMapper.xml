@@ -97,7 +97,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="status != null ">status,</if>
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
-            <if test="id != null ">#{id},</if>
+            <if test="id != null ">{id},</if>
             <if test="fanCode != null  and fanCode != ''">#{fanCode},</if>
             <if test="brand != null  and brand != ''">#{brand},</if>
             <if test="power != null ">#{power},</if>

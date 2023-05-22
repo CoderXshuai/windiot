@@ -20,7 +20,7 @@ import com.data.system.domain.SysUser;
 /**
  * 自定义访问控制
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class OnlineSessionFilter extends AccessControlFilter
 {

@@ -20,7 +20,7 @@ import com.google.code.kaptcha.Producer;
 /**
  * 图片验证码（支持算术形式）
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/captcha")

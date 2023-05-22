@@ -7,7 +7,7 @@ import com.google.code.kaptcha.text.impl.DefaultTextCreator;
 /**
  * 验证码文本生成器
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class KaptchaTextCreator extends DefaultTextCreator
 {

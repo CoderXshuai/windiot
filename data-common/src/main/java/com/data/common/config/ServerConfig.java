@@ -8,7 +8,7 @@ import com.data.common.utils.ServletUtils;
 /**
  * 服务相关配置
  * 
- * 技术支持微信：17725354261
+ *
  *
  */
 @Component

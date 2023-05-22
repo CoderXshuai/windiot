@@ -7,7 +7,7 @@ import com.data.system.domain.SysUser;
 /**
  * 用户 业务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface ISysUserService
 {

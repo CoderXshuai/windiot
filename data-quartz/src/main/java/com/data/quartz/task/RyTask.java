@@ -7,7 +7,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 定时任务调度测试
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Component("ryTask")
 public class RyTask

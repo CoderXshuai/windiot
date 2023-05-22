@@ -7,7 +7,7 @@ import com.data.system.domain.SysUsers;
 /**
  * 增删改查测试Service接口
  * 
- * 技术支持微信：17725354261
+ *
  * @date 2019-12-02
  */
 public interface ISysUsersService 

@@ -26,7 +26,7 @@ import com.data.system.service.ISysPostService;
 /**
  * 岗位信息操作处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/system/post")

@@ -13,7 +13,7 @@ import com.data.common.utils.Threads;
 /**
  * 线程池配置
  *
- * 技术支持微信：17725354261
+ *
  **/
 @Configuration
 public class ThreadPoolConfig

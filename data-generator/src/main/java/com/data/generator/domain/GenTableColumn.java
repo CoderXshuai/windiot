@@ -8,7 +8,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 代码生成业务字段表 gen_table_column
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class GenTableColumn extends BaseEntity
 {

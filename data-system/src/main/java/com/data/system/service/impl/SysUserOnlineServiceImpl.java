@@ -14,7 +14,7 @@ import com.data.system.service.ISysUserOnlineService;
 /**
  * 在线用户 服务层处理
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Service
 public class SysUserOnlineServiceImpl implements ISysUserOnlineService

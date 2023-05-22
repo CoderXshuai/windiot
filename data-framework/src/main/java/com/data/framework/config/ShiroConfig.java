@@ -40,7 +40,7 @@ import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 /**
  * 权限配置加载
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Configuration
 public class ShiroConfig

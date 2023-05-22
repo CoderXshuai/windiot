@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * 报表
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/demo/report")

@@ -58,7 +58,7 @@
     </select>
 
     <insert id="insertBizFanFailure" parameterType="com.data.biz.vo.FanAlertManageVo">
-        insert into biz_fan_failure,biz_fan
+        insert into biz_fan_failure
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null ">id,</if>
             <if test="fanId != null ">fan_id,</if>
@@ -68,37 +68,37 @@
             <if test="processingTime != null ">processing_time,</if>
             <if test="createTime != null ">create_time,</if>
             <if test="remark != null  and remark != ''">remark,</if>
-            <if test="level != null ">level = #{level},</if>
-            <if test="record != null ">record = #{record},</if>
-            <if test="brand != null ">biz_fan.brand = #{brand},</if>
-            <if test="power != null ">biz_fan.power = #{power},</if>
+            <if test="level != null ">level,</if>
+            <if test="record != null ">record,</if>
         </trim>
-<!--        <trim prefix="values (" suffix=")" suffixOverrides=",">-->
-<!--            <if test="id != null ">#{id},</if>-->
-<!--            <if test="fanId != null ">#{fanId},</if>-->
-<!--            <if test="type != null ">#{type},</if>-->
-<!--            <if test="principal != null  and principal != ''">#{principal},</if>-->
-<!--            <if test="status != null ">#{status},</if>-->
-<!--            <if test="processingTime != null ">#{processingTime},</if>-->
-<!--            <if test="createTime != null ">#{createTime},</if>-->
-<!--            <if test="remark != null  and remark != ''">#{remark},</if>-->
-<!--        </trim>-->
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null ">#{id},</if>
+            <if test="fanId != null ">#{fanId},</if>
+            <if test="type != null ">#{type},</if>
+            <if test="principal != null  and principal != ''">#{principal},</if>
+            <if test="status != null ">#{status},</if>
+            <if test="processingTime != null ">#{processingTime},</if>
+            <if test="createTime != null ">#{createTime},</if>
+            <if test="remark != null  and remark != ''">#{remark},</if>
+            <if test="level != null ">#{level},</if>
+            <if test="record != null ">#{record},</if>
+        </trim>
     </insert>
 
     <update id="updateBizFanFailure" parameterType="com.data.biz.vo.FanAlertManageVo">
-        update biz_fan_failure,biz_fan
+        update biz_fan_failure
         <trim prefix="SET" suffixOverrides=",">
             <if test="fanId != null ">fan_id = #{fanId},</if>
             <if test="type != null ">type = #{type},</if>
-<!--            <if test="principal != null  and principal != ''">principal = #{principal},</if>-->
+            <!--            <if test="principal != null  and principal != ''">principal = #{principal},</if>-->
             <if test="status != null ">status = #{status},</if>
-#             <if test="processingTime != null ">processing_time = #{processingTime},</if>
+            #
+            <if test="processingTime != null ">processing_time = #{processingTime},</if>
             <if test="createTime != null ">create_time = #{createTime},</if>
-#             <if test="remark != null  and remark != ''">remark = #{remark},</if>
+            #
+            <if test="remark != null  and remark != ''">remark = #{remark},</if>
             <if test="level != null ">level = #{level},</if>
             <if test="record != null ">record = #{record},</if>
-            <if test="brand != null ">biz_fan.brand = #{brand},</if>
-            <if test="power != null ">biz_fan.power = #{power},</if>
         </trim>
         where id = #{id}
     </update>

@@ -8,7 +8,7 @@ import com.data.system.domain.SysMenu;
 /**
  * 菜单表 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysMenuMapper
 {

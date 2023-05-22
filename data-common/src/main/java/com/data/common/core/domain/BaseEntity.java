@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 /**
  * Entity基类
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class BaseEntity implements Serializable
 {

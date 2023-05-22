@@ -8,7 +8,7 @@ import com.data.common.utils.DateUtils;
 /**
  * JVM相关信息
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class Jvm
 {

@@ -9,7 +9,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 增删改查测试对象 sys_users
  * 
- * 技术支持微信：17725354261
+ *
  * @date 2019-12-02
  */
 public class SysUsers extends BaseEntity

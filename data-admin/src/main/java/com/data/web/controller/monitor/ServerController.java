@@ -12,7 +12,7 @@ import com.data.framework.web.domain.Server;
 /**
  * 服务器监控
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/monitor/server")

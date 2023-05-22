@@ -27,6 +27,8 @@
                                     class="fa fa-refresh"></i>&nbsp;重置</a>
                         </li>
                         <li>
+                            <a class="btn btn-info btn-rounded btn-sm" onclick="$.operate.add()"><i
+                                    class="fa fa-search"></i>&nbsp;新增</a>
                             <a class="btn btn-info btn-rounded btn-sm" onclick=""><i class="fa fa-search"></i>&nbsp;导出</a>
                         </li>
                     </ul>
@@ -72,7 +74,9 @@
         }
         var options = {
             url: prefix + "/list",
+            createUrl: prefix + "/add",
             updateUrl: prefix + "/edit/{id}",
+            modalName: "故障记录",
             showFooter: true,
             showSearch: false,
             showRefresh: false,

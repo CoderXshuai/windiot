@@ -8,7 +8,7 @@ import com.data.system.domain.SysDictType;
 /**
  * 字典表 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Mapper
 public interface SysDictTypeMapper

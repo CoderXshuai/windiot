@@ -6,7 +6,7 @@ import org.apache.commons.fileupload.FileUploadException;
 /**
  * 文件上传 误异常类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class InvalidExtensionException extends FileUploadException
 {

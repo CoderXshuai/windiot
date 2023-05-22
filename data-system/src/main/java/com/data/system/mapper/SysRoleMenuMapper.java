@@ -7,7 +7,7 @@ import com.data.system.domain.SysRoleMenu;
 /**
  * 角色与菜单关联表 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysRoleMenuMapper
 {

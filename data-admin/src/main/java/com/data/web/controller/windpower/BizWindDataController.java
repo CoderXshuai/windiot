@@ -23,7 +23,7 @@ import com.data.common.enums.BusinessType;
 /**
  * 风速统计Controller
  * 
- * 技术支持微信：17725354261
+ * 
  * @date 2019-12-19
  */
 @Controller

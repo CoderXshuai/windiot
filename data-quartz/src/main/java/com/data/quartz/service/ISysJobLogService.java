@@ -7,7 +7,7 @@ import com.data.quartz.domain.SysJobLog;
 /**
  * 定时任务调度日志信息信息 服务层
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public interface ISysJobLogService
 {

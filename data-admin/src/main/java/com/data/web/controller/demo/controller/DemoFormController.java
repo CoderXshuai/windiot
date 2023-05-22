@@ -12,7 +12,7 @@ import com.data.common.core.domain.AjaxResult;
 /**
  * 表单相关
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/demo/form")

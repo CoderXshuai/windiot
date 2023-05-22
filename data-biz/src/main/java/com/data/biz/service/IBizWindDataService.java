@@ -8,7 +8,7 @@ import com.data.biz.domain.BizWindData;
 /**
  * 风速统计Service接口
  * 
- * 技术支持微信：17725354261
+ *
  * @date 2019-12-19
  */
 public interface IBizWindDataService 

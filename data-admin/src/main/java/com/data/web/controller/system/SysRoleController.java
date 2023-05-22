@@ -29,7 +29,7 @@ import com.data.system.service.ISysUserService;
 /**
  * 角色信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/system/role")

@@ -26,7 +26,7 @@ import oshi.util.Util;
 /**
  * 服务器相关信息
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Server
 {

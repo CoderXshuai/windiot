@@ -16,7 +16,7 @@ import com.data.system.domain.SysUser;
 /**
  * shiro 工具类
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class ShiroUtils
 {

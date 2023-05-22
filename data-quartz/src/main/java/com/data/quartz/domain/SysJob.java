@@ -16,7 +16,7 @@ import com.data.quartz.util.CronUtils;
 /**
  * 定时任务调度表 sys_job
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysJob extends BaseEntity implements Serializable
 {

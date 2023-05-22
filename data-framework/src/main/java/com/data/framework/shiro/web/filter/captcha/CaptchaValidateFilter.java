@@ -13,7 +13,7 @@ import com.google.code.kaptcha.Constants;
 /**
  * 验证码过滤器
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class CaptchaValidateFilter extends AccessControlFilter
 {

@@ -7,7 +7,7 @@ import com.data.common.enums.OnlineStatus;
 /**
  * 在线用户会话属性
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class OnlineSession extends SimpleSession
 {

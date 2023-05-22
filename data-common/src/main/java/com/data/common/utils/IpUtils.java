@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 获取IP方法
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class IpUtils
 {

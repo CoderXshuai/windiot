@@ -9,7 +9,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 通知公告表 sys_notice
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysNotice extends BaseEntity
 {

@@ -3,7 +3,7 @@ package com.data.common.exception.file;
 /**
  * 文件名大小限制异常类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class FileSizeLimitExceededException extends FileException
 {

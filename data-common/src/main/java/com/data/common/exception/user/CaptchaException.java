@@ -3,7 +3,7 @@ package com.data.common.exception.user;
 /**
  * 验证码错误异常类
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class CaptchaException extends UserException
 {

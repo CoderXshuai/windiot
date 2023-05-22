@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 通用http发送方法
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class HttpUtils
 {

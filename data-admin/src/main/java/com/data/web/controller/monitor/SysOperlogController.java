@@ -23,7 +23,7 @@ import com.data.system.service.ISysOperLogService;
 /**
  * 操作日志记录
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/monitor/operlog")

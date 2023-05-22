@@ -7,7 +7,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 操作消息提醒
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class AjaxResult extends HashMap<String, Object>
 {

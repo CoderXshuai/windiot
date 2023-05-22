@@ -26,7 +26,7 @@ import com.data.quartz.service.ISysJobService;
 /**
  * 调度任务信息操作处理
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/monitor/job")

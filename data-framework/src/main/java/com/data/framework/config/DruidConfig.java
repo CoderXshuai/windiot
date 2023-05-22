@@ -26,7 +26,7 @@ import com.data.framework.datasource.DynamicDataSource;
 /**
  * druid 配置多数据源
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Configuration
 public class DruidConfig

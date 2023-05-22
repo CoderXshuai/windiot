@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 线程相关工具类.
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class Threads
 {

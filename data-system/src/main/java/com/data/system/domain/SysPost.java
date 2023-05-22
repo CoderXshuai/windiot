@@ -11,7 +11,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 岗位表 sys_post
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysPost extends BaseEntity
 {

@@ -35,7 +35,7 @@ import com.data.system.service.ISysRoleService;
 /**
  * 自定义Realm 处理登录 权限
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class UserRealm extends AuthorizingRealm
 {

@@ -14,7 +14,7 @@ import com.data.common.utils.IpUtils;
 /**
  * 处理并记录日志文件
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class LogUtils
 {

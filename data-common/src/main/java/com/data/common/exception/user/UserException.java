@@ -5,7 +5,7 @@ import com.data.common.exception.base.BaseException;
 /**
  * 用户信息异常类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class UserException extends BaseException
 {

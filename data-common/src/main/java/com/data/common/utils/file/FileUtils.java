@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 文件处理工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class FileUtils
 {

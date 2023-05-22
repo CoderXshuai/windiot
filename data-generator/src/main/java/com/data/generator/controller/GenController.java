@@ -31,7 +31,7 @@ import com.data.generator.service.IGenTableService;
 /**
  * 代码生成 操作处理
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Controller
 @RequestMapping("/tool/gen")

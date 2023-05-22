@@ -27,7 +27,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * 登录帐号控制过滤器
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class KickoutSessionFilter extends AccessControlFilter
 {

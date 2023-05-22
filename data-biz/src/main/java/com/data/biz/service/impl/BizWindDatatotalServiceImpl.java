@@ -16,7 +16,7 @@ import com.data.common.utils.RandomUtil;
 /**
  * 风速统计Service业务层处理
  * 
- * 技术支持微信：17725354261
+ * 
  * @date 2019-12-09
  */
 @Service

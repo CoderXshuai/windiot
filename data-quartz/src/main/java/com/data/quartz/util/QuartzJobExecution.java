@@ -7,7 +7,7 @@ import com.data.quartz.domain.SysJob;
 /**
  * 定时任务处理（允许并发执行）
  * 
- * 技术支持微信：17725354261
+ *
  *
  */
 public class QuartzJobExecution extends AbstractQuartzJob

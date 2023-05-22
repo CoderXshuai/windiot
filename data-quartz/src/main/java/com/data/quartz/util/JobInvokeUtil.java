@@ -12,7 +12,7 @@ import com.data.quartz.domain.SysJob;
 /**
  * 任务执行工具
  *
- * 技术支持微信：17725354261
+ *
  */
 public class JobInvokeUtil
 {

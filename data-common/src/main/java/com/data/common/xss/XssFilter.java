@@ -19,7 +19,7 @@ import com.data.common.utils.StringUtils;
 /**
  * 防止XSS攻击的过滤器
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class XssFilter implements Filter
 {

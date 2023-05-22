@@ -12,7 +12,7 @@ import com.data.common.enums.DataSourceType;
 /**
  * 自定义多数据源切换注解
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Target({ ElementType.METHOD, ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)

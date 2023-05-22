@@ -10,7 +10,7 @@ import com.data.common.enums.OnlineStatus;
 /**
  * 当前在线会话 sys_user_online
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysUserOnline extends BaseEntity
 {

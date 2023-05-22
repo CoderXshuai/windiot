@@ -16,7 +16,7 @@ import com.data.framework.shiro.service.SysShiroService;
 /**
  * 针对自定义的ShiroSession的db操作
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class OnlineSessionDAO extends EnterpriseCacheSessionDAO
 {

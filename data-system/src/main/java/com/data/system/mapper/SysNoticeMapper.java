@@ -7,7 +7,7 @@ import com.data.system.domain.SysNotice;
 /**
  * 公告 数据层
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public interface SysNoticeMapper
 {

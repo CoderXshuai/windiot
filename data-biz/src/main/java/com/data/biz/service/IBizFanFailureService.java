@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 故障Service接口
  * 
- * 技术支持微信：17725354261
+ * 
  * @date 2019-12-09
  */
 public interface IBizFanFailureService 

@@ -11,7 +11,7 @@ import com.data.common.core.domain.BaseEntity;
 /**
  * 字典类型表 sys_dict_type
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class SysDictType extends BaseEntity
 {

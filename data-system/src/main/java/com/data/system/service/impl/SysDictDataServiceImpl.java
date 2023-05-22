@@ -12,7 +12,7 @@ import com.data.system.service.ISysDictDataService;
 /**
  * 字典 业务层处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service
 public class SysDictDataServiceImpl implements ISysDictDataService

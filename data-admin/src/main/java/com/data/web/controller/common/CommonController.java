@@ -22,7 +22,7 @@ import com.data.common.utils.file.FileUtils;
 /**
  * 通用请求处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 public class CommonController

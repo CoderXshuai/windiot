@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>风机故障频次折线图</title>
+    <!-- 引入 ECharts 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 引入 jQuery 库 -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="chart-container" style="width: 800px; height: 400px;"></div>
+<script>
+    // 从接口获取数据
+    $.ajax({
+        url: 'http://localhost:8082/windpower/windalertselect/list',
+        method: 'POST',
+        data: {
+            pageSize: 10,
+            pageNum: 1,
+            orderByColumn: '',
+            isAsc: 'asc',
+            'params[beginTime]': '',
+            'params[endTime]': ''
+        },
+        success: function (response) {
+            var data = response.rows;
+
+            // 处理数据
+            var xAxisData = []; // X 轴数据
+            var vaneCountData = []; // 叶片故障数据
+            var turnCountData = []; // 转向故障数据
+            var dynamoCountData = []; // 发电机故障数据
+            var elseCountData = []; // 其他故障数据
+
+            data.forEach(function (item) {
+                xAxisData.push(item.fanId);
+                vaneCountData.push(item.vaneCount);
+                turnCountData.push(item.turnCount);
+                dynamoCountData.push(item.dynamoCount);
+                elseCountData.push(item.elseCount);
+            });
+
+            // 更新图表配置项
+            option1.xAxis.data = xAxisData;
+            option1.series = [
+                {
+                    name: '叶片故障',
+                    type: 'bar',
+                    barWidth: 15,
+                    itemStyle: {
+                        color: 'rgba(29, 140, 248, 0.8)',
+                    },
+                    data: vaneCountData,
+                },
+                {
+                    name: '转向故障',
+                    type: 'bar',
+                    barWidth: 15,
+                    itemStyle: {
+                        color: 'rgba(253, 115, 106, 0.8)',
+                    },
+                    data: turnCountData,
+                },
+                {
+                    name: '发电机故障',
+                    type: 'bar',
+                    barWidth: 15,
+                    itemStyle: {
+                        color: 'rgba(102, 189, 106, 0.8)',
+                    },
+                    data: dynamoCountData,
+                },
+                {
+                    name: '其他故障',
+                    type: 'bar',
+                    barWidth: 15,
+                    itemStyle: {
+                        color: 'rgba(247, 186, 23, 0.8)',
+                    },
+                    data: elseCountData,
+                },
+            ];
+
+            // 渲染图表
+            var chart = echarts.init(document.getElementById('chart-container'));
+            chart.setOption(option1);
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
+
+
+</script>
+</body>
+</html>

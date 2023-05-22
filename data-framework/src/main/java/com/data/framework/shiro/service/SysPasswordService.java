@@ -21,7 +21,7 @@ import com.data.system.domain.SysUser;
 /**
  * 登录密码方法
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Component
 public class SysPasswordService

@@ -15,7 +15,7 @@ import com.data.common.utils.ServletUtils;
 /**
  * 防止重复提交拦截器
  * 
- * 技术支持微信：17725354261
+ * 
  */
 @Component
 public abstract class RepeatSubmitInterceptor extends HandlerInterceptorAdapter

@@ -8,7 +8,7 @@ import com.data.common.core.text.StrFormatter;
 /**
  * 字符串工具类
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class StringUtils extends org.apache.commons.lang3.StringUtils
 {

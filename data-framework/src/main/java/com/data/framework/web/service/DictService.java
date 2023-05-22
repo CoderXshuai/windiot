@@ -10,7 +10,7 @@ import com.data.system.service.ISysDictDataService;
 /**
  * RuoYi首创 html调用 thymeleaf 实现字典读取
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Service("dict")
 public class DictService

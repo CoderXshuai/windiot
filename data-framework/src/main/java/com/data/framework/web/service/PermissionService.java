@@ -14,7 +14,7 @@ import java.beans.PropertyDescriptor;
 /**
  * RuoYi首创 js调用 thymeleaf 实现按钮权限可见性
  * <p>
- * 技术支持微信：17725354261
+ * 
  */
 @Service("permission")
 public class PermissionService {

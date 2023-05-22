@@ -3,7 +3,7 @@ package com.data.common.enums;
 /**
  * 用户状态
  * 
- * 技术支持微信：17725354261
+ *
  */
 public enum UserStatus
 {

@@ -27,7 +27,7 @@ import com.data.system.domain.SysUser;
 /**
  * 操作日志记录处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Aspect
 @Component

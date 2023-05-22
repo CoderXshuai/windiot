@@ -9,7 +9,7 @@ import com.data.quartz.domain.SysJob;
 /**
  * 定时任务调度信息信息 服务层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface ISysJobService
 {

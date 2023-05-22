@@ -23,7 +23,7 @@ import com.data.system.service.ISysNoticeService;
 /**
  * 公告 信息操作处理
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/system/notice")

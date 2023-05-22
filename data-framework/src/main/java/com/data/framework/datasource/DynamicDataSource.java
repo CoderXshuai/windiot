@@ -9,7 +9,7 @@ import com.data.common.config.datasource.DynamicDataSourceContextHolder;
 /**
  * 动态数据源
  * 
- * 技术支持微信：17725354261
+ *
  */
 public class DynamicDataSource extends AbstractRoutingDataSource
 {

@@ -8,7 +8,7 @@ import com.data.system.domain.SysUserRole;
 /**
  * 用户与角色关联表 数据层
  * 
- * 技术支持微信：17725354261
+ *
  */
 public interface SysUserRoleMapper
 {

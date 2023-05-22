@@ -10,7 +10,7 @@ import com.data.common.core.controller.BaseController;
 /**
  * druid 监控
  * 
- * 技术支持微信：17725354261
+ *
  */
 @Controller
 @RequestMapping("/monitor/data")

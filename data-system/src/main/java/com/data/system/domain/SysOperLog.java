@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 操作日志记录表 oper_log
  * 
- * 技术支持微信：17725354261
+ * 
  */
 public class SysOperLog extends BaseEntity
 {
