@@ -1,5 +1,6 @@
 package com.data.biz.service;
 
+import com.data.biz.domain.BizFanDatatotal;
 import com.data.biz.domain.BizFanFailure;
 import com.data.biz.vo.FanAlertManageVo;
 import com.data.biz.vo.WindAlertSelectVo;

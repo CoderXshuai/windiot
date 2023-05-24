@@ -12,8 +12,8 @@
         <result property="processingTime" column="processing_time"/>
         <result property="createTime" column="create_time"/>
         <result property="remark" column="remark"/>
-<!--        <result property="level" column="level"/>-->
-<!--        <result property="record" column="record"/>-->
+        <!--        <result property="level" column="level"/>-->
+        <!--        <result property="record" column="record"/>-->
     </resultMap>
 
     <sql id="selectBizFanFailureVo">
@@ -24,19 +24,25 @@
                processing_time,
                remark,
                status,
-               principal
+               principal,
+               level
         from biz_fan_failure
     </sql>
 
-    <select id="selectBizFanFailureList"  resultMap="BizFanFailureResult">
+    <select id="selectBizFanFailureList" resultMap="BizFanFailureResult"
+            parameterType="com.data.biz.domain.BizFanFailure">
         <include refid="selectBizFanFailureVo"/>
         <where>
             <if test="id != null ">and id = #{id}</if>
             <if test="fanId != null ">and fan_id = #{fanId}</if>
             <if test="type != null ">and type = #{type}</if>
             <if test="status != null ">and status = #{status}</if>
-            <if test="processingTime != null ">and processing_time = #{processingTime}</if>
-            <if test="createTime != null ">and create_time = #{createTime}</if>
+            <if test="params.beginProcessingTime != null and params.beginProcessingTime != '' and params.endProcessingTime != null and params.endProcessingTime != ''">
+                and processing_time between #{params.beginProcessingTime} and #{params.endProcessingTime}
+            </if>
+            <if test="params.beginCreateTime != null and params.beginCreateTime != '' and params.endCreateTime != null and params.endCreateTime != ''">
+                and create_time between #{params.beginCreateTime} and #{params.endCreateTime}
+            </if>
             <if test="remark != null  and remark != ''">and remark = #{remark}</if>
         </where>
     </select>

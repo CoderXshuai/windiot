@@ -43,5 +43,6 @@ public class FanRepairManageVo {
     private Date createTime;
     private String remark;
     private String principal;
+    private Integer level;
 
 }

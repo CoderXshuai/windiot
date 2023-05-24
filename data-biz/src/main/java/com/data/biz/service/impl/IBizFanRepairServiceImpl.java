@@ -38,8 +38,8 @@ public class IBizFanRepairServiceImpl implements IBizFanRepairService {
      * @return 事故维修
      */
     @Override
-    public List<FanRepairManageVo> selectBizFanFailureList() {
-        return bizFanRepairMapper.selectBizFanFailureList();
+    public List<FanRepairManageVo> selectBizFanFailureList(BizFanFailure bizFanFailure) {
+        return bizFanRepairMapper.selectBizFanFailureList(bizFanFailure);
     }
 
     /**

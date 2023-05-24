@@ -25,7 +25,7 @@ public interface IBizFanRepairService  {
      * @param bizFanFailure 事故维修
      * @return 事故维修集合
      */
-    public List<FanRepairManageVo> selectBizFanFailureList();
+    public List<FanRepairManageVo> selectBizFanFailureList(BizFanFailure bizFanFailure);
 
     /**
      * 新增事故维修

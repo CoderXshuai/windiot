@@ -1,6 +1,7 @@
 package com.data.biz.service.impl;
 
 import com.data.biz.domain.BizFan;
+import com.data.biz.domain.BizFanDatatotal;
 import com.data.biz.domain.BizFanFailure;
 import com.data.biz.mapper.BizFanFailureMapper;
 import com.data.biz.mapper.BizFanMapper;
@@ -109,7 +110,7 @@ public class BizFanFailureServiceImpl implements IBizFanFailureService {
     /**
      * 新增故障
      *
-     * @param bizFanFailure 故障
+     * @param fanAlertManageVo 故障
      * @return 结果
      */
     @Override

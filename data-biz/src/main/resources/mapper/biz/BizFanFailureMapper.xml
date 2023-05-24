@@ -37,7 +37,9 @@
             <if test="type != null ">and type = #{type}</if>
             <if test="principal != null  and principal != ''">and principal = #{principal}</if>
             <if test="status != null ">and status = #{status}</if>
-            <if test="processingTime != null ">and processing_time = #{processingTime}</if>
+<!--            <if test="params.beginProcessingTime != null and params.beginProcessingTime != '' and params.endProcessingTime != null and params.endProcessingTime != ''">-->
+<!--                and processing_time between #{params.beginProcessingTime} and #{params.endProcessingTime}-->
+<!--            </if>-->
         </where>
     </select>
 

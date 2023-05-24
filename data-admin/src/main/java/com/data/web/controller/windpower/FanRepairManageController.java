@@ -40,9 +40,9 @@ public class FanRepairManageController extends BaseController {
 
     @PostMapping("/list")
     @ResponseBody
-    public TableDataInfo list() {
+    public TableDataInfo list(BizFanFailure bizFanFailure) {
         startPage();
-        List<FanRepairManageVo> list = bizFanRepairService.selectBizFanFailureList();
+        List<FanRepairManageVo> list = bizFanRepairService.selectBizFanFailureList(bizFanFailure);
         return getDataTable(list);
     }
 
@@ -53,7 +53,7 @@ public class FanRepairManageController extends BaseController {
     @PostMapping("/export")
     @ResponseBody
     public AjaxResult export(BizFanFailure bizFanFailure) {
-        List<FanRepairManageVo> list = bizFanRepairService.selectBizFanFailureList();
+        List<FanRepairManageVo> list = bizFanRepairService.selectBizFanFailureList(bizFanFailure);
         ExcelUtil<FanRepairManageVo> util = new ExcelUtil<FanRepairManageVo>(FanRepairManageVo.class);
         return util.exportExcel(list, "repair");
     }
