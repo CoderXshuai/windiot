@@ -11,7 +11,7 @@
  Target Server Version : 80028
  File Encoding         : 65001
 
- Date: 23/05/2023 06:12:04
+ Date: 24/05/2023 15:30:35
 */
 
 SET NAMES utf8mb4;
@@ -39,7 +39,7 @@ CREATE TABLE `biz_cabin`  (
   `status` tinyint(1) NULL DEFAULT NULL COMMENT '状态0无效1有效',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 106 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 112 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_cabin
@@ -79,7 +79,7 @@ CREATE TABLE `biz_fan`  (
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   `status` tinyint(1) NULL DEFAULT 1 COMMENT '状态0关闭1开启2异常',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_fan
@@ -118,7 +118,7 @@ CREATE TABLE `biz_fan_datatotal_day`  (
   `status` tinyint(1) NULL DEFAULT 1 COMMENT '状态0无效1有效',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 67 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 68 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_fan_datatotal_day
@@ -205,7 +205,7 @@ CREATE TABLE `biz_fan_datatotal_month`  (
   `status` tinyint(1) NULL DEFAULT 1 COMMENT '状态0无效1有效',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 29 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_fan_datatotal_month
@@ -258,7 +258,7 @@ CREATE TABLE `biz_fan_datatotal_year`  (
   `status` tinyint(1) NULL DEFAULT 1 COMMENT '状态0无效1有效',
   `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_fan_datatotal_year
@@ -288,14 +288,17 @@ CREATE TABLE `biz_fan_failure`  (
   `level` tinyint NULL DEFAULT NULL COMMENT '事故等级',
   `record` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '记录人',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '故障' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '故障' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_fan_failure
 -- ----------------------------
 INSERT INTO `biz_fan_failure` VALUES (1, 1, 3, '负责人测试', 3, '2023-05-22 22:02:08', '2023-05-22 22:02:08', '处理描述', 1, 'admin');
-INSERT INTO `biz_fan_failure` VALUES (2, 1, 2, '负责人测试', 3, '2023-05-23 03:03:48', '2023-05-18 17:48:22', '修复成功了', 1, 'admin');
-INSERT INTO `biz_fan_failure` VALUES (3, 2, 2, '负责人测试', 2, '2023-05-20 13:26:09', '2023-05-19 17:48:22', '', 2, 'admin');
+INSERT INTO `biz_fan_failure` VALUES (2, 6, 2, '负责人测试', 2, '2023-05-24 15:29:42', '2023-05-24 15:29:42', '修复成功了', 1, 'admin');
+INSERT INTO `biz_fan_failure` VALUES (3, 2, 2, '负责人测试', 1, '2023-05-24 00:00:00', '2023-05-24 00:00:00', '好了', 2, 'admin');
+INSERT INTO `biz_fan_failure` VALUES (6, 3, 1, NULL, NULL, NULL, '2023-05-24 00:00:00', NULL, 1, 'admin');
+INSERT INTO `biz_fan_failure` VALUES (7, 15, 3, NULL, NULL, '2023-05-24 15:29:46', '2023-05-24 15:29:46', NULL, 1, 'admin');
+INSERT INTO `biz_fan_failure` VALUES (8, 9, 1, NULL, NULL, NULL, '2023-05-24 00:00:00', NULL, 1, 'admin');
 
 -- ----------------------------
 -- Table structure for biz_fan_speed
@@ -564,7 +567,7 @@ CREATE TABLE `biz_wind_datatotal`  (
   `type` tinyint(1) NULL DEFAULT 1 COMMENT '类型 1日 2 月 3年',
   `create_time` datetime NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '风速统计' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 18 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '风速统计' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of biz_wind_datatotal
@@ -609,7 +612,7 @@ CREATE TABLE `gen_table`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`table_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '代码生成业务表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 23 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '代码生成业务表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of gen_table
@@ -623,7 +626,7 @@ INSERT INTO `gen_table` VALUES (17, 'biz_fan_speed', '', 'BizFanSpeed', 'crud', 
 INSERT INTO `gen_table` VALUES (18, 'biz_power_plant', '', 'BizPowerPlant', 'crud', 'com.data.system', 'system', 'plant', NULL, 'ruoyi', NULL, 'admin', '2019-12-09 16:06:00', '', NULL, NULL);
 INSERT INTO `gen_table` VALUES (20, 'biz_wind_data', '风速统计', 'BizWindData', 'crud', 'com.data.system', 'system', 'data', '风速统计', 'ruoyi', NULL, 'admin', '2019-12-19 16:31:50', '', NULL, NULL);
 INSERT INTO `gen_table` VALUES (21, 'biz_wind_datatotal', '风速统计', 'BizWindDatatotal', 'crud', 'com.data.system', 'system', 'datatotal', '风速统计', 'ruoyi', NULL, 'admin', '2019-12-20 17:02:37', '', NULL, NULL);
-INSERT INTO `gen_table` VALUES (22, 'biz_fan_failure', '故障', 'BizFanFailure', 'crud', 'com.data.web', 'windpower', 'repair', '事故维修', 'ruoyi', '{\"treeName\":\"\",\"treeParentCode\":\"\",\"treeCode\":\"\"}', 'admin', '2023-05-15 15:45:53', '', '2023-05-22 22:43:59', '');
+INSERT INTO `gen_table` VALUES (22, 'biz_fan_failure', '故障', 'BizFanFailure', 'crud', 'com.data.web', 'windpower', 'repair', '事故维修', 'ruoyi', '{\"treeName\":\"\",\"treeParentCode\":\"\",\"treeCode\":\"\"}', 'admin', '2023-05-15 15:45:53', '', '2023-05-24 15:05:31', '');
 
 -- ----------------------------
 -- Table structure for gen_table_column
@@ -653,7 +656,7 @@ CREATE TABLE `gen_table_column`  (
   `update_by` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '更新者',
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`column_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 289 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '代码生成业务表字段' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 290 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '代码生成业务表字段' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of gen_table_column
@@ -788,16 +791,16 @@ INSERT INTO `gen_table_column` VALUES (276, '21', 'wnw_num', NULL, 'int(11)', 'L
 INSERT INTO `gen_table_column` VALUES (277, '21', 'status', '状态 0无效 1有效', 'tinyint(1)', 'Integer', 'status', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'radio', '', 34, 'admin', '2019-12-20 17:02:40', '', NULL);
 INSERT INTO `gen_table_column` VALUES (278, '21', 'type', '类型 1日 2 月 3年', 'tinyint(1)', 'Integer', 'type', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', '', 35, 'admin', '2019-12-20 17:02:40', '', NULL);
 INSERT INTO `gen_table_column` VALUES (279, '21', 'create_time', '创建时间', 'datetime', 'Date', 'createTime', '0', '0', NULL, '1', NULL, NULL, NULL, 'EQ', 'datetime', '', 36, 'admin', '2019-12-20 17:02:41', '', NULL);
-INSERT INTO `gen_table_column` VALUES (280, '22', 'id', '序号', 'bigint', 'Long', 'id', '1', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 1, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (281, '22', 'fan_id', '风机序号', 'bigint', 'Long', 'fanId', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 2, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (282, '22', 'type', '故障类型', 'tinyint(1)', 'Integer', 'type', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', 'biz_fan_failure_type', 3, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (283, '22', 'principal', '负责人', 'varchar(255)', 'String', 'principal', '0', '0', NULL, NULL, NULL, NULL, NULL, 'EQ', 'input', '', 4, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (284, '22', 'status', '处理状态', 'tinyint(1)', 'Integer', 'status', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'radio', 'biz_fan_failure_status', 5, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (285, '22', 'processing_time', '处理时间', 'datetime', 'Date', 'processingTime', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'datetime', '', 6, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (286, '22', 'create_time', '事故记录时间', 'datetime', 'Date', 'createTime', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'datetime', '', 7, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (287, '22', 'remark', '描述', 'varchar(255)', 'String', 'remark', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 8, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (288, '22', 'level', '事故等级', 'tinyint', 'Integer', 'level', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', 'biz_fan_failure_level', 9, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
-INSERT INTO `gen_table_column` VALUES (289, '22', 'record', '记录人', 'varchar(255)', 'String', 'record', '0', '0', NULL, NULL, NULL, NULL, NULL, 'EQ', 'input', '', 10, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-22 22:43:59');
+INSERT INTO `gen_table_column` VALUES (280, '22', 'id', '序号', 'bigint', 'Long', 'id', '1', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 1, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (281, '22', 'fan_id', '风机序号', 'bigint', 'Long', 'fanId', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', 'biz_fan_id', 2, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (282, '22', 'type', '故障类型', 'tinyint(1)', 'Integer', 'type', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', 'biz_fan_failure_type', 3, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (283, '22', 'principal', '负责人', 'varchar(255)', 'String', 'principal', '0', '0', NULL, NULL, NULL, NULL, NULL, 'EQ', 'input', '', 4, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (284, '22', 'status', '处理状态', 'tinyint(1)', 'Integer', 'status', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'radio', 'biz_fan_failure_status', 5, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (285, '22', 'processing_time', '处理时间', 'datetime', 'Date', 'processingTime', '0', '0', NULL, '1', '1', '1', '1', 'BETWEEN', 'datetime', '', 6, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (286, '22', 'create_time', '事故记录时间', 'datetime', 'Date', 'createTime', '0', '0', NULL, '1', '1', '1', '1', 'BETWEEN', 'datetime', '', 7, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (287, '22', 'remark', '描述', 'varchar(255)', 'String', 'remark', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'input', '', 8, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (288, '22', 'level', '事故等级', 'tinyint', 'Integer', 'level', '0', '0', NULL, '1', '1', '1', '1', 'EQ', 'select', 'biz_fan_failure_level', 9, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
+INSERT INTO `gen_table_column` VALUES (289, '22', 'record', '记录人', 'varchar(255)', 'String', 'record', '0', '0', NULL, NULL, NULL, NULL, NULL, 'EQ', 'input', '', 10, 'admin', '2023-05-15 15:45:53', NULL, '2023-05-24 15:05:31');
 
 -- ----------------------------
 -- Table structure for qrtz_blob_triggers
@@ -947,7 +950,7 @@ CREATE TABLE `qrtz_scheduler_state`  (
 -- ----------------------------
 -- Records of qrtz_scheduler_state
 -- ----------------------------
-INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'DESKTOP-PUJ0JIH1684790198708', 1684793524353, 15000);
+INSERT INTO `qrtz_scheduler_state` VALUES ('RuoyiScheduler', 'DESKTOP-PUJ0JIH1684913331481', 1684913403187, 15000);
 
 -- ----------------------------
 -- Table structure for qrtz_simple_triggers
@@ -1024,9 +1027,9 @@ CREATE TABLE `qrtz_triggers`  (
 -- ----------------------------
 -- Records of qrtz_triggers
 -- ----------------------------
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME4', 'DEFAULT', 'TASK_CLASS_NAME4', 'DEFAULT', NULL, 1684790199000, -1, 5, 'PAUSED', 'CRON', 1684790199000, 0, NULL, -1, '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME5', 'DEFAULT', 'TASK_CLASS_NAME5', 'DEFAULT', NULL, 1684790199000, -1, 5, 'PAUSED', 'CRON', 1684790199000, 0, NULL, -1, '');
-INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME7', 'DEFAULT', 'TASK_CLASS_NAME7', 'DEFAULT', NULL, 1684854000000, -1, 5, 'PAUSED', 'CRON', 1684790199000, 0, NULL, -1, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME4', 'DEFAULT', 'TASK_CLASS_NAME4', 'DEFAULT', NULL, 1684913332000, -1, 5, 'PAUSED', 'CRON', 1684913332000, 0, NULL, -1, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME5', 'DEFAULT', 'TASK_CLASS_NAME5', 'DEFAULT', NULL, 1684913332000, -1, 5, 'PAUSED', 'CRON', 1684913332000, 0, NULL, -1, '');
+INSERT INTO `qrtz_triggers` VALUES ('RuoyiScheduler', 'TASK_CLASS_NAME7', 'DEFAULT', 'TASK_CLASS_NAME7', 'DEFAULT', NULL, 1684940400000, -1, 5, 'PAUSED', 'CRON', 1684913332000, 0, NULL, -1, '');
 
 -- ----------------------------
 -- Table structure for sys_config
@@ -1044,7 +1047,7 @@ CREATE TABLE `sys_config`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`config_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '参数配置表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '参数配置表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_config
@@ -1073,7 +1076,7 @@ CREATE TABLE `sys_dept`  (
   `update_by` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '更新者',
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`dept_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 109 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '部门表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 110 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '部门表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_dept
@@ -1104,12 +1107,12 @@ CREATE TABLE `sys_dict_data`  (
   `is_default` char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT 'N' COMMENT '是否默认（Y是 N否）',
   `status` char(1) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '0' COMMENT '状态（0正常 1停用）',
   `create_by` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '创建者',
-  `create_time` datetime NULL DEFAULT NULL COMMENT '创建时间',
+  `create_time` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_by` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '更新者',
-  `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
+  `update_time` datetime NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`dict_code`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 37 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典数据表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 42 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典数据表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_dict_data
@@ -1151,6 +1154,21 @@ INSERT INTO `sys_dict_data` VALUES (34, 2, '处理中', '2', 'biz_fan_failure_st
 INSERT INTO `sys_dict_data` VALUES (35, 3, '已处理', '3', 'biz_fan_failure_status', NULL, NULL, 'Y', '0', 'admin', '2023-05-18 16:14:50', '', NULL, '处理状态已处理');
 INSERT INTO `sys_dict_data` VALUES (36, 1, '一级', '1', 'biz_fan_failure_level', NULL, NULL, 'Y', '0', 'admin', '2023-05-18 16:20:41', '', NULL, '一级');
 INSERT INTO `sys_dict_data` VALUES (37, 2, '二级', '2', 'biz_fan_failure_level', NULL, NULL, 'Y', '0', 'admin', '2023-05-18 16:20:53', '', NULL, '二级');
+INSERT INTO `sys_dict_data` VALUES (38, 1, '1号风机', '1', 'biz_fan_id', '', '', 'Y', '0', 'admin', '2023-05-24 15:02:28', 'admin', '2023-05-24 15:02:54', '风机标号1');
+INSERT INTO `sys_dict_data` VALUES (39, 2, '2号风机', '2', 'biz_fan_id', NULL, NULL, 'Y', '0', 'admin', '2023-05-24 15:03:45', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (40, 3, '3号风机', '3', 'biz_fan_id', NULL, NULL, 'Y', '0', 'admin', '2023-05-24 15:04:00', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (41, 4, '4号风机', '4', 'biz_fan_id', NULL, NULL, 'Y', '0', 'admin', '2023-05-24 15:04:13', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (42, 5, '5号风机', '5', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:04:13', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (43, 6, '6号风机', '6', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:04:13', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (46, 9, '9号风机', '9', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:22:14', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (47, 10, '10号风机', '10', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:24:33', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (48, 11, '11号风机', '11', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:24:50', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (49, 12, '12号风机', '12', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:25:01', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (50, 13, '13号风机', '13', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:25:10', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (51, 14, '14号风机', '14', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:25:21', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (52, 15, '15号风机', '15', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:25:30', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (53, 16, '16号风机', '16', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:26:00', '', NULL, NULL);
+INSERT INTO `sys_dict_data` VALUES (54, 17, '17号风机', '17', 'biz_fan_id', NULL, NULL, 'N', '0', 'admin', '2023-05-24 15:26:12', '', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for sys_dict_type
@@ -1168,7 +1186,7 @@ CREATE TABLE `sys_dict_type`  (
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`dict_id`) USING BTREE,
   UNIQUE INDEX `dict_type`(`dict_type` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 15 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典类型表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 17 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '字典类型表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_dict_type
@@ -1187,7 +1205,7 @@ INSERT INTO `sys_dict_type` VALUES (11, '统一状态', 'biz_status', '0', 'admi
 INSERT INTO `sys_dict_type` VALUES (12, '故障类型', 'biz_fan_failure_type', '0', 'admin', '2023-05-18 15:50:27', 'admin', '2023-05-18 16:11:57', 'type');
 INSERT INTO `sys_dict_type` VALUES (13, '处理状态', 'biz_fan_failure_status', '0', 'admin', '2023-05-18 15:55:06', 'admin', '2023-05-18 16:11:46', 'status');
 INSERT INTO `sys_dict_type` VALUES (14, '事故等级', 'biz_fan_failure_level', '0', 'admin', '2023-05-18 16:19:22', '', NULL, 'level');
-INSERT INTO `sys_dict_type` VALUES (15, '风机', 'biz_fan', '0', 'admin', '2023-05-18 21:51:22', '', NULL, '风机种类');
+INSERT INTO `sys_dict_type` VALUES (15, '风机', 'biz_fan_id', '0', 'admin', '2023-05-18 21:51:22', 'admin', '2023-05-24 15:01:49', '风机编号');
 
 -- ----------------------------
 -- Table structure for sys_job
@@ -1208,7 +1226,7 @@ CREATE TABLE `sys_job`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '备注信息',
   PRIMARY KEY (`job_id`, `job_name`, `job_group`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 10 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '定时任务调度表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_job
@@ -8497,7 +8515,7 @@ CREATE TABLE `sys_logininfor`  (
   `msg` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '提示消息',
   `login_time` datetime NULL DEFAULT NULL COMMENT '访问时间',
   PRIMARY KEY (`info_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 849 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 863 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '系统访问记录' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_logininfor
@@ -9288,7 +9306,7 @@ CREATE TABLE `sys_menu`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '备注',
   PRIMARY KEY (`menu_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2051 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单权限表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 2052 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '菜单权限表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_menu
@@ -9447,7 +9465,7 @@ CREATE TABLE `sys_oper_log`  (
   `error_msg` varchar(2000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT '' COMMENT '错误消息',
   `oper_time` datetime NULL DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 558 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 594 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '操作日志记录' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -9930,6 +9948,22 @@ INSERT INTO `sys_oper_log` VALUES (574, '菜单管理', 2, 'com.data.web.control
 INSERT INTO `sys_oper_log` VALUES (575, '菜单管理', 2, 'com.data.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\r\n  \"menuId\" : [ \"107\" ],\r\n  \"parentId\" : [ \"1\" ],\r\n  \"menuType\" : [ \"C\" ],\r\n  \"menuName\" : [ \"通知管理\" ],\r\n  \"url\" : [ \"/system/notice\" ],\r\n  \"target\" : [ \"menuItem\" ],\r\n  \"perms\" : [ \"system:notice:view\" ],\r\n  \"orderNum\" : [ \"8\" ],\r\n  \"icon\" : [ \"#\" ],\r\n  \"visible\" : [ \"0\" ]\r\n}', 0, NULL, '2023-05-23 01:59:53');
 INSERT INTO `sys_oper_log` VALUES (576, '菜单管理', 2, 'com.data.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\r\n  \"menuId\" : [ \"501\" ],\r\n  \"parentId\" : [ \"108\" ],\r\n  \"menuType\" : [ \"C\" ],\r\n  \"menuName\" : [ \"登录日志\" ],\r\n  \"url\" : [ \"/monitor/logininfor\" ],\r\n  \"target\" : [ \"menuItem\" ],\r\n  \"perms\" : [ \"monitor:logininfor:view\" ],\r\n  \"orderNum\" : [ \"2\" ],\r\n  \"icon\" : [ \"#\" ],\r\n  \"visible\" : [ \"1\" ]\r\n}', 0, NULL, '2023-05-23 02:00:48');
 INSERT INTO `sys_oper_log` VALUES (577, '菜单管理', 2, 'com.data.web.controller.system.SysMenuController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/menu/edit', '127.0.0.1', '内网IP', '{\r\n  \"menuId\" : [ \"2049\" ],\r\n  \"parentId\" : [ \"0\" ],\r\n  \"menuType\" : [ \"M\" ],\r\n  \"menuName\" : [ \"*实时数据库测试*\" ],\r\n  \"url\" : [ \"#\" ],\r\n  \"target\" : [ \"menuItem\" ],\r\n  \"perms\" : [ \"\" ],\r\n  \"orderNum\" : [ \"6\" ],\r\n  \"icon\" : [ \"fa fa-line-chart\" ],\r\n  \"visible\" : [ \"1\" ]\r\n}', 0, NULL, '2023-05-23 03:03:18');
+INSERT INTO `sys_oper_log` VALUES (578, '代码生成', 2, 'com.data.generator.controller.GenController.editSave()', 'POST', 1, 'admin', '研发部门', '/tool/gen/edit', '127.0.0.1', '内网IP', '{\r\n  \"tableId\" : [ \"22\" ],\r\n  \"tableName\" : [ \"biz_fan_failure\" ],\r\n  \"tableComment\" : [ \"故障\" ],\r\n  \"className\" : [ \"BizFanFailure\" ],\r\n  \"functionAuthor\" : [ \"ruoyi\" ],\r\n  \"remark\" : [ \"\" ],\r\n  \"columns[0].columnId\" : [ \"280\" ],\r\n  \"columns[0].sort\" : [ \"1\" ],\r\n  \"columns[0].columnComment\" : [ \"序号\" ],\r\n  \"columns[0].javaType\" : [ \"Long\" ],\r\n  \"columns[0].javaField\" : [ \"id\" ],\r\n  \"columns[0].isInsert\" : [ \"1\" ],\r\n  \"columns[0].isEdit\" : [ \"1\" ],\r\n  \"columns[0].isList\" : [ \"1\" ],\r\n  \"columns[0].isQuery\" : [ \"1\" ],\r\n  \"columns[0].queryType\" : [ \"EQ\" ],\r\n  \"columns[0].htmlType\" : [ \"input\" ],\r\n  \"columns[0].dictType\" : [ \"\" ],\r\n  \"columns[1].columnId\" : [ \"281\" ],\r\n  \"columns[1].sort\" : [ \"2\" ],\r\n  \"columns[1].columnComment\" : [ \"风机序号\" ],\r\n  \"columns[1].javaType\" : [ \"Long\" ],\r\n  \"columns[1].javaField\" : [ \"fanId\" ],\r\n  \"columns[1].isInsert\" : [ \"1\" ],\r\n  \"columns[1].isEdit\" : [ \"1\" ],\r\n  \"columns[1].isList\" : [ \"1\" ],\r\n  \"columns[1].isQuery\" : [ \"1\" ],\r\n  \"columns[1].queryType\" : [ \"EQ\" ],\r\n  \"columns[1].htmlType\" : [ \"input\" ],\r\n  \"columns[1].dictType\" : [ \"\" ],\r\n  \"columns[2].columnId\" : [ \"282\" ],\r\n  \"columns[2].sort\" : [ \"3\" ],\r\n  \"columns[2].columnComment\" : [ \"故障类型\" ],\r\n  \"columns[2].javaType\" : [ \"Integer\" ],\r\n  \"columns[2].javaField\" : [ \"type\" ],\r\n  \"columns[2].isInsert\" : [ \"1\" ],\r\n  \"columns[2].isEdit\" : [ \"1\" ],\r\n  \"columns[2].isList\" : [ \"1\" ],\r\n  \"columns[2].isQuery\" : [ \"1\" ],\r\n  \"columns[2].queryType\" : [ \"EQ\" ],\r\n  \"columns[2].htmlType\" : [ \"select\" ],\r\n  \"columns[2].dictType\" : [ \"biz_fan_failure_type\" ],\r\n  \"columns[3].columnId\" : [ \"283\" ],\r\n  \"columns[3].sort\" : [ \"4\" ],\r\n  \"columns[3].columnComment\" : [ \"负责人\" ],\r\n  \"columns[3].javaType\" : [ \"String\" ],\r\n  \"columns[3].javaField\" : [ \"principal\" ],\r\n  \"columns[3].queryType\" : [ \"EQ\" ],\r\n  \"columns[3].htmlType\" : [ \"input\" ],\r\n  \"columns[3].dictType\" : [ \"\" ],\r\n  \"columns[4].columnId\" : [ \"284\" ],\r\n  \"columns[4].sort\" : [ \"5\" ],\r\n  \"columns[4].columnComment\" : [ \"处理状态\" ],\r\n  \"columns[4].javaType\" :', 0, NULL, '2023-05-24 13:29:23');
+INSERT INTO `sys_oper_log` VALUES (579, '代码生成', 2, 'com.data.generator.controller.GenController.editSave()', 'POST', 1, 'admin', '研发部门', '/tool/gen/edit', '127.0.0.1', '内网IP', '{\r\n  \"tableId\" : [ \"22\" ],\r\n  \"tableName\" : [ \"biz_fan_failure\" ],\r\n  \"tableComment\" : [ \"故障\" ],\r\n  \"className\" : [ \"BizFanFailure\" ],\r\n  \"functionAuthor\" : [ \"ruoyi\" ],\r\n  \"remark\" : [ \"\" ],\r\n  \"columns[0].columnId\" : [ \"280\" ],\r\n  \"columns[0].sort\" : [ \"1\" ],\r\n  \"columns[0].columnComment\" : [ \"序号\" ],\r\n  \"columns[0].javaType\" : [ \"Long\" ],\r\n  \"columns[0].javaField\" : [ \"id\" ],\r\n  \"columns[0].isInsert\" : [ \"1\" ],\r\n  \"columns[0].isEdit\" : [ \"1\" ],\r\n  \"columns[0].isList\" : [ \"1\" ],\r\n  \"columns[0].isQuery\" : [ \"1\" ],\r\n  \"columns[0].queryType\" : [ \"EQ\" ],\r\n  \"columns[0].htmlType\" : [ \"input\" ],\r\n  \"columns[0].dictType\" : [ \"\" ],\r\n  \"columns[1].columnId\" : [ \"281\" ],\r\n  \"columns[1].sort\" : [ \"2\" ],\r\n  \"columns[1].columnComment\" : [ \"风机序号\" ],\r\n  \"columns[1].javaType\" : [ \"Long\" ],\r\n  \"columns[1].javaField\" : [ \"fanId\" ],\r\n  \"columns[1].isInsert\" : [ \"1\" ],\r\n  \"columns[1].isEdit\" : [ \"1\" ],\r\n  \"columns[1].isList\" : [ \"1\" ],\r\n  \"columns[1].isQuery\" : [ \"1\" ],\r\n  \"columns[1].queryType\" : [ \"EQ\" ],\r\n  \"columns[1].htmlType\" : [ \"input\" ],\r\n  \"columns[1].dictType\" : [ \"\" ],\r\n  \"columns[2].columnId\" : [ \"282\" ],\r\n  \"columns[2].sort\" : [ \"3\" ],\r\n  \"columns[2].columnComment\" : [ \"故障类型\" ],\r\n  \"columns[2].javaType\" : [ \"Integer\" ],\r\n  \"columns[2].javaField\" : [ \"type\" ],\r\n  \"columns[2].isInsert\" : [ \"1\" ],\r\n  \"columns[2].isEdit\" : [ \"1\" ],\r\n  \"columns[2].isList\" : [ \"1\" ],\r\n  \"columns[2].isQuery\" : [ \"1\" ],\r\n  \"columns[2].queryType\" : [ \"EQ\" ],\r\n  \"columns[2].htmlType\" : [ \"select\" ],\r\n  \"columns[2].dictType\" : [ \"biz_fan_failure_type\" ],\r\n  \"columns[3].columnId\" : [ \"283\" ],\r\n  \"columns[3].sort\" : [ \"4\" ],\r\n  \"columns[3].columnComment\" : [ \"负责人\" ],\r\n  \"columns[3].javaType\" : [ \"String\" ],\r\n  \"columns[3].javaField\" : [ \"principal\" ],\r\n  \"columns[3].queryType\" : [ \"EQ\" ],\r\n  \"columns[3].htmlType\" : [ \"input\" ],\r\n  \"columns[3].dictType\" : [ \"\" ],\r\n  \"columns[4].columnId\" : [ \"284\" ],\r\n  \"columns[4].sort\" : [ \"5\" ],\r\n  \"columns[4].columnComment\" : [ \"处理状态\" ],\r\n  \"columns[4].javaType\" :', 0, NULL, '2023-05-24 13:39:27');
+INSERT INTO `sys_oper_log` VALUES (580, '事故维修', 2, 'com.data.web.controller.windpower.FanRepairManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanrepairmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"3\" ],\r\n  \"fanId\" : [ \"2\" ],\r\n  \"type\" : [ \"2\" ],\r\n  \"principal\" : [ \"负责人测试\" ],\r\n  \"status\" : [ \"2\" ],\r\n  \"remark\" : [ \"的\" ],\r\n  \"createTime\" : [ \"2023-05-19\" ],\r\n  \"processingTime\" : [ \"2023-05-20\" ]\r\n}', 0, NULL, '2023-05-24 13:46:42');
+INSERT INTO `sys_oper_log` VALUES (581, '事故维修', 2, 'com.data.web.controller.windpower.FanRepairManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanrepairmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"3\" ],\r\n  \"fanId\" : [ \"2\" ],\r\n  \"type\" : [ \"2\" ],\r\n  \"principal\" : [ \"负责人测试\" ],\r\n  \"status\" : [ \"1\" ],\r\n  \"remark\" : [ \"好了\" ],\r\n  \"createTime\" : [ \"2023-05-24\" ],\r\n  \"processingTime\" : [ \"2023-05-24\" ]\r\n}', 0, NULL, '2023-05-24 14:36:08');
+INSERT INTO `sys_oper_log` VALUES (582, '事故维修', 2, 'com.data.web.controller.windpower.FanRepairManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanrepairmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"2\" ],\r\n  \"fanId\" : [ \"1\" ],\r\n  \"type\" : [ \"2\" ],\r\n  \"principal\" : [ \"负责人测试\" ],\r\n  \"status\" : [ \"2\" ],\r\n  \"remark\" : [ \"修复成功了\" ],\r\n  \"createTime\" : [ \"2023-05-18\" ],\r\n  \"processingTime\" : [ \"2023-05-23\" ]\r\n}', 0, NULL, '2023-05-24 14:36:14');
+INSERT INTO `sys_oper_log` VALUES (583, '字典类型', 2, 'com.data.web.controller.system.SysDictTypeController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/edit', '127.0.0.1', '内网IP', '{\r\n  \"dictId\" : [ \"15\" ],\r\n  \"dictName\" : [ \"风机\" ],\r\n  \"dictType\" : [ \"biz_fan\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"风机编号\" ]\r\n}', 0, NULL, '2023-05-24 15:01:38');
+INSERT INTO `sys_oper_log` VALUES (584, '字典类型', 2, 'com.data.web.controller.system.SysDictTypeController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/edit', '127.0.0.1', '内网IP', '{\r\n  \"dictId\" : [ \"15\" ],\r\n  \"dictName\" : [ \"风机\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"风机编号\" ]\r\n}', 0, NULL, '2023-05-24 15:01:49');
+INSERT INTO `sys_oper_log` VALUES (585, '字典数据', 1, 'com.data.web.controller.system.SysDictDataController.addSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\r\n  \"dictLabel\" : [ \"1\" ],\r\n  \"dictValue\" : [ \"1\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"cssClass\" : [ \"\" ],\r\n  \"dictSort\" : [ \"1\" ],\r\n  \"listClass\" : [ \"\" ],\r\n  \"isDefault\" : [ \"Y\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"风机标号1\" ]\r\n}', 0, NULL, '2023-05-24 15:02:28');
+INSERT INTO `sys_oper_log` VALUES (586, '字典数据', 2, 'com.data.web.controller.system.SysDictDataController.editSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/data/edit', '127.0.0.1', '内网IP', '{\r\n  \"dictCode\" : [ \"38\" ],\r\n  \"dictLabel\" : [ \"1号风机\" ],\r\n  \"dictValue\" : [ \"1\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"cssClass\" : [ \"\" ],\r\n  \"dictSort\" : [ \"1\" ],\r\n  \"listClass\" : [ \"\" ],\r\n  \"isDefault\" : [ \"Y\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"风机标号1\" ]\r\n}', 0, NULL, '2023-05-24 15:02:54');
+INSERT INTO `sys_oper_log` VALUES (587, '字典数据', 1, 'com.data.web.controller.system.SysDictDataController.addSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\r\n  \"dictLabel\" : [ \"2号风机\" ],\r\n  \"dictValue\" : [ \"2\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"cssClass\" : [ \"\" ],\r\n  \"dictSort\" : [ \"2\" ],\r\n  \"listClass\" : [ \"\" ],\r\n  \"isDefault\" : [ \"Y\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"\" ]\r\n}', 0, NULL, '2023-05-24 15:03:45');
+INSERT INTO `sys_oper_log` VALUES (588, '字典数据', 1, 'com.data.web.controller.system.SysDictDataController.addSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\r\n  \"dictLabel\" : [ \"3号风机\" ],\r\n  \"dictValue\" : [ \"3\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"cssClass\" : [ \"\" ],\r\n  \"dictSort\" : [ \"3\" ],\r\n  \"listClass\" : [ \"\" ],\r\n  \"isDefault\" : [ \"Y\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"\" ]\r\n}', 0, NULL, '2023-05-24 15:04:00');
+INSERT INTO `sys_oper_log` VALUES (589, '字典数据', 1, 'com.data.web.controller.system.SysDictDataController.addSave()', 'POST', 1, 'admin', '研发部门', '/system/dict/data/add', '127.0.0.1', '内网IP', '{\r\n  \"dictLabel\" : [ \"4号风机\" ],\r\n  \"dictValue\" : [ \"4\" ],\r\n  \"dictType\" : [ \"biz_fan_id\" ],\r\n  \"cssClass\" : [ \"\" ],\r\n  \"dictSort\" : [ \"4\" ],\r\n  \"listClass\" : [ \"\" ],\r\n  \"isDefault\" : [ \"Y\" ],\r\n  \"status\" : [ \"0\" ],\r\n  \"remark\" : [ \"\" ]\r\n}', 0, NULL, '2023-05-24 15:04:13');
+INSERT INTO `sys_oper_log` VALUES (590, '代码生成', 2, 'com.data.generator.controller.GenController.editSave()', 'POST', 1, 'admin', '研发部门', '/tool/gen/edit', '127.0.0.1', '内网IP', '{\r\n  \"tableId\" : [ \"22\" ],\r\n  \"tableName\" : [ \"biz_fan_failure\" ],\r\n  \"tableComment\" : [ \"故障\" ],\r\n  \"className\" : [ \"BizFanFailure\" ],\r\n  \"functionAuthor\" : [ \"ruoyi\" ],\r\n  \"remark\" : [ \"\" ],\r\n  \"columns[0].columnId\" : [ \"280\" ],\r\n  \"columns[0].sort\" : [ \"1\" ],\r\n  \"columns[0].columnComment\" : [ \"序号\" ],\r\n  \"columns[0].javaType\" : [ \"Long\" ],\r\n  \"columns[0].javaField\" : [ \"id\" ],\r\n  \"columns[0].isInsert\" : [ \"1\" ],\r\n  \"columns[0].isEdit\" : [ \"1\" ],\r\n  \"columns[0].isList\" : [ \"1\" ],\r\n  \"columns[0].isQuery\" : [ \"1\" ],\r\n  \"columns[0].queryType\" : [ \"EQ\" ],\r\n  \"columns[0].htmlType\" : [ \"input\" ],\r\n  \"columns[0].dictType\" : [ \"\" ],\r\n  \"columns[1].columnId\" : [ \"281\" ],\r\n  \"columns[1].sort\" : [ \"2\" ],\r\n  \"columns[1].columnComment\" : [ \"风机序号\" ],\r\n  \"columns[1].javaType\" : [ \"Long\" ],\r\n  \"columns[1].javaField\" : [ \"fanId\" ],\r\n  \"columns[1].isInsert\" : [ \"1\" ],\r\n  \"columns[1].isEdit\" : [ \"1\" ],\r\n  \"columns[1].isList\" : [ \"1\" ],\r\n  \"columns[1].isQuery\" : [ \"1\" ],\r\n  \"columns[1].queryType\" : [ \"EQ\" ],\r\n  \"columns[1].htmlType\" : [ \"select\" ],\r\n  \"columns[1].dictType\" : [ \"biz_fan_id\" ],\r\n  \"columns[2].columnId\" : [ \"282\" ],\r\n  \"columns[2].sort\" : [ \"3\" ],\r\n  \"columns[2].columnComment\" : [ \"故障类型\" ],\r\n  \"columns[2].javaType\" : [ \"Integer\" ],\r\n  \"columns[2].javaField\" : [ \"type\" ],\r\n  \"columns[2].isInsert\" : [ \"1\" ],\r\n  \"columns[2].isEdit\" : [ \"1\" ],\r\n  \"columns[2].isList\" : [ \"1\" ],\r\n  \"columns[2].isQuery\" : [ \"1\" ],\r\n  \"columns[2].queryType\" : [ \"EQ\" ],\r\n  \"columns[2].htmlType\" : [ \"select\" ],\r\n  \"columns[2].dictType\" : [ \"biz_fan_failure_type\" ],\r\n  \"columns[3].columnId\" : [ \"283\" ],\r\n  \"columns[3].sort\" : [ \"4\" ],\r\n  \"columns[3].columnComment\" : [ \"负责人\" ],\r\n  \"columns[3].javaType\" : [ \"String\" ],\r\n  \"columns[3].javaField\" : [ \"principal\" ],\r\n  \"columns[3].queryType\" : [ \"EQ\" ],\r\n  \"columns[3].htmlType\" : [ \"input\" ],\r\n  \"columns[3].dictType\" : [ \"\" ],\r\n  \"columns[4].columnId\" : [ \"284\" ],\r\n  \"columns[4].sort\" : [ \"5\" ],\r\n  \"columns[4].columnComment\" : [ \"处理状态\" ],\r\n  \"columns[4].', 0, NULL, '2023-05-24 15:05:31');
+INSERT INTO `sys_oper_log` VALUES (591, '故障', 2, 'com.data.web.controller.windpower.FanAlertManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanalertmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"2\" ],\r\n  \"fanId\" : [ \"14\" ],\r\n  \"type\" : [ \"2\" ],\r\n  \"level\" : [ \"1\" ],\r\n  \"record\" : [ \"admin\" ]\r\n}', 0, NULL, '2023-05-24 15:27:24');
+INSERT INTO `sys_oper_log` VALUES (592, '故障', 2, 'com.data.web.controller.windpower.FanAlertManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanalertmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"2\" ],\r\n  \"fanId\" : [ \"6\" ],\r\n  \"type\" : [ \"2\" ],\r\n  \"level\" : [ \"1\" ],\r\n  \"record\" : [ \"admin\" ]\r\n}', 0, NULL, '2023-05-24 15:29:42');
+INSERT INTO `sys_oper_log` VALUES (593, '故障', 2, 'com.data.web.controller.windpower.FanAlertManageController.editSave()', 'POST', 1, 'admin', '研发部门', '/windpower/fanalertmanage/edit', '127.0.0.1', '内网IP', '{\r\n  \"id\" : [ \"7\" ],\r\n  \"fanId\" : [ \"15\" ],\r\n  \"type\" : [ \"3\" ],\r\n  \"level\" : [ \"1\" ],\r\n  \"record\" : [ \"admin\" ]\r\n}', 0, NULL, '2023-05-24 15:29:46');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -9947,7 +9981,7 @@ CREATE TABLE `sys_post`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`post_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '岗位信息表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_post
@@ -9975,7 +10009,7 @@ CREATE TABLE `sys_role`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`role_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色信息表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '角色信息表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_role
@@ -10233,7 +10267,7 @@ CREATE TABLE `sys_user`  (
   `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`user_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 102 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户信息表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 103 CHARACTER SET = utf8 COLLATE = utf8_general_ci COMMENT = '用户信息表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_user
@@ -10265,7 +10299,7 @@ CREATE TABLE `sys_user_online`  (
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES ('2ee20043-2871-4bcb-878a-b1df70f4e135', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', 'on_line', '2023-05-23 05:19:32', '2023-05-23 06:11:26', 1800000);
+INSERT INTO `sys_user_online` VALUES ('c98b4f90-3703-4e60-b184-873b1067bb88', 'admin', '研发部门', '127.0.0.1', '内网IP', 'Chrome 11', 'Windows 10', 'on_line', '2023-05-24 13:05:37', '2023-05-24 15:29:34', 1800000);
 
 -- ----------------------------
 -- Table structure for sys_user_post

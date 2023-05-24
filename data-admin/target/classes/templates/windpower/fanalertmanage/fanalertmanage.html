@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" type="text/css" href="/css/mdui.min.css"/>
-    <script src="/js/mdui.min.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" type="text/css" href="/css/mdui.min.css"/>
+        <script src="/js/mdui.min.js" type="text/javascript" charset="utf-8"></script>
     <th:block th:include="include :: header('表格数据汇总')"/>
 </head>
 <body class="gray-bg">
@@ -47,6 +47,7 @@
 <script th:inline="javascript">
     var prefix = ctx + "windpower/fanalertmanage";
     var datas = [[${@dict.getType('sys_normal_disable')}]];
+    var fanIdDatas = [[${@dict.getType('biz_fan_id')}]];
 
     $(function () {
         dispose = function (failureId) {
@@ -92,8 +93,11 @@
                     title: '序号'
                 },
                 {
-                    field: 'fanId',
-                    title: '风机编号'
+                    field : 'fanId',
+                    title : '风机序号',
+                    formatter: function(value, row, index) {
+                        return $.table.selectDictLabel(fanIdDatas, value);
+                    }
                 },
                 {
                     field: 'brand',
