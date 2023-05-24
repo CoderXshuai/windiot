@@ -51,7 +51,8 @@
             <div class="col-sm-8">
                 <div class="input-group date">
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                    <input name="createTime" th:value="${#dates.format(fanRepairManageVo.createTime, 'yyyy-MM-dd')}"
+                    <input name="createTime"
+                           th:value="${#dates.format(new java.util.Date().getTime(), 'yyyy-MM-dd HH:mm:ss')}"
                            class="form-control" placeholder="yyyy-MM-dd" type="text">
                 </div>
             </div>
@@ -61,7 +62,8 @@
             <div class="col-sm-8">
                 <div class="input-group date">
                     <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                    <input name="processingTime" th:value="${#dates.format(fanRepairManageVo.processingTime, 'yyyy-MM-dd')}"
+                    <input name="processingTime"
+                           th:value="${#dates.format(fanRepairManageVo.processingTime, 'yyyy-MM-dd HH:mm:ss')}"
                            class="form-control" placeholder="yyyy-MM-dd" type="text">
                 </div>
             </div>
@@ -83,8 +85,19 @@
     }
 
     $("input[name='processingTime']").datetimepicker({
-        format: "yyyy-mm-dd",
-        minView: "month",
+        format: "yyyy-mm-dd hh:ii",
+        todayBtn: true,
+        dateFormat: 'yyyy-MM-dd',//日期显示格式
+        timeFormat: 'hh:mm:ss',//时间显示格式
+        initialDate: new Date(),
+        autoclose: true
+    });
+    $("input[name='createTime']").datetimepicker({
+        format: "yyyy-mm-dd hh:ii",
+        todayBtn: true,
+        dateFormat: 'yyyy-MM-dd',//日期显示格式
+        timeFormat: 'hh:mm:ss',//时间显示格式
+        initialDate: new Date(),
         autoclose: true
     });
 </script>
